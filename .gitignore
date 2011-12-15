@@ -1,0 +1,10 @@
+.bundle
+.DS_Store
+*~
+*.swp
+*.swo
+.project
+.idea
+.sass-cache
+mkmf.log
+.sass-cache
