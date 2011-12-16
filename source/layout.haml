@@ -1,10 +1,130 @@
 !!!
-%html
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
-    %meta{:charset => "utf-8"}/
-    / Always force latest IE rendering engine (even in intranet) &amp; Chrome Frame
-    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
-    = stylesheet_link_tag "site.css"
+    %meta{:content => "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org", :name => "generator"}/
+    %title District Summary Reports
+    %link{:href => "http://static.districthealth.moh.gov.rw/TOkNu9LDencLzreU6u7DZPxhBGtzxvlYwXguYj4EPRe.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %meta{:content => "text/html; charset=us-ascii", "http-equiv" => "Content-Type"}/
+    %meta{:content => "main", :name => "layout"}/
+    / for admin forms
+    -# %script{:src => "http://static.districthealth.moh.gov.rw/IKfETRJERwBRdVMGxGDGgTIvzB2B464w7472lQKpd3b.js", :type => "text/javascript"}
+
+    %link{:type => "text/css", :media => "screen", :rel => "stylesheet", :href => "stylesheets/screen.css"}
+    %link{:type => "text/css", :media => "print", :rel => "stylesheet", :href => "stylesheets/print.css"}
+
+    %script{:src => "js/jquery.js", :type => "text/javascript"}
+    %script{:src => "js/dropdown_init.js", :type => "text/javascript"}
+    %script{:src => "js/foldable_init.js", :type => "text/javascript"}
   %body
-    #main
-      = yield
+    #spinner.spinner{:style => "display: none;"}
+      %img{:alt => "Loading...", :src => "http://static.districthealth.moh.gov.rw/RUqKjjg0blqYq46cT6pZl3avB2GM1AWLPs1pE4vbKUr.gif"}/
+    #header
+      .wrapper
+        %h1#logo
+          %a{:href => "/"} DHSST
+        %ul#switcher.locales
+          %li
+            %a.no-link{:href => "/dsr/view?lang=en"} en
+          %li
+            %a{:href => "/dsr/view?lang=fr"} fr
+        %h2
+          %span.right
+            %img{:alt => "Rwanda coat of arms", :src => "http://static.districthealth.moh.gov.rw/LK6UbUK33KUP73Ws3xeZlquQqCkj1YHlG73Hz5EPXWo.png", :width => "33"}/
+          %span
+            Rwanda Ministry Of
+            Health
+          District Health Systems Strenghtening Tool
+        %ul#logout
+          %li
+            %a.redmine.follow{:href => "http://districthealth.moh.gov.rw/redmine", :target => "_blank"} Found a bug? Go to REDMINE
+          %li
+            %a.redmine.follow{:href => "/helpdesk"}
+              Questions? Call the helpdesk
+              114
+          %li
+            %a.follow{:href => "/auth/signOut"} Logout
+      .clear
+    / <h1>Welcome to Kevin</h1>
+    #navigation
+      .wrapper
+        %ul#main-menu.menu
+          %li
+            %a{:href => "/editSurvey/view"} Survey
+          %li
+            %a.active{:href => "#", :onclick => "return false;"} Reports
+            %ul.submenu
+              %li
+                %a{:href => "/dashboard/view"} Dashboard
+              %li
+                %a{:href => "/cost/view"} Costing
+              %li
+                %a.active{:href => "/dsr/view"} District Summary Reports
+              %li
+                %a{:href => "/maps/view"} Maps
+              %li
+                %a{:href => "/fct/view"} Facility Count Tables
+          %li
+            %a{:href => "#", :onclick => "return false;"} Administration
+            %ul.submenu
+              / <li><a href="/constant/list">Constants</a></li>
+              %li
+                %a{:href => "/rawDataElement/list"} Raw data Element
+              %li
+                %a{:href => "/normalizedDataElement/list"}
+                  Normalized data
+                  element
+              %li
+                %a{:href => "/calculation/list"} Calculation
+              %li
+                %a{:href => "/enum/list"} Enum
+              %li
+                %a{:href => "/iteration/list"} Iteration
+              %li
+                %a{:href => "/survey/list"} Survey
+              %li
+                %a{:href => "/user/list"} User
+          %li
+            %a{:href => "#", :onclick => "return false;"} My Account
+            %ul.submenu
+              %li
+                %a{:href => "/auth/newPassword?targetURI=%2Fdsr%2Fview%3Flang%3Dfr"}
+                  Change
+                  password
+    #content
+      .wrapper
+        #report
+          = render "subnav"
+          #center.main
+            #values
+              %p.help Please select an Organisation / Objective
+            .clear
+        .clear
+    #footer
+      .wrapper
+        \&copy; Clinton Health Access Initiative
+        %br/
+        %a{:href => "/about"} About
+        |
+        %a{:href => "/contact"} Contact
+        |
+        %a{:href => "/helpdesk"} HelpDesk
+
+    :javascript
+      //Styling the main menu
+      $('#main-menu > li').hover(
+              function () {
+                      //show its submenu
+                      if (!$('ul', this).hasClass('open')) {
+                              $('ul', this).addClass('open');
+                              $('ul', this).show();
+                      }
+
+              },
+              function () {
+                      var self = this;
+                      //hide its submenu
+                      $('ul', this).slideUp(10, function(){
+                              $('ul', self).removeClass('open');
+                      });
+              }
+      );

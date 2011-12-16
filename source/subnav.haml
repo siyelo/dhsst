@@ -1,0 +1,1565 @@
+.subnav
+  .filter
+    %span.bold Iteration
+    %span.dropdown.dropdown-period.subnav-dropdown
+      %a.selected{"data-period" => "3", "data-type" => "period", :href => "#"}
+        2010
+      .hidden.dropdown-list
+        %ul
+          %li
+            %a{:href => "/dsr/view/1"}
+              %span 2008
+          %li
+            %a{:href => "/dsr/view/2"}
+              %span 2009
+          %li
+            %a{:href => "/dsr/view/3"}
+              %span 2010
+          %li
+            %a{:href => "/dsr/view/4"}
+              %span 2011
+  .filter
+    %span.bold Location
+    %span.dropdown.dropdown-organisation.subnav-dropdown
+      %a.selected{"data-type" => "organisation", :href => "#"}
+        Please select a location
+      .hidden.dropdown-list
+        %ul
+          %li.foldable.opened
+            %a.foldable-toggle{:href => "#"} (toggle)
+            %a.dropdown-link.parameter{"data-organisation" => "12456", "data-type" => "organisation", :href => "/dsr/view?organisation=12456"}
+              RWANDA
+            %ul#organisation-fold-12456.organisation-fold
+              %li.foldable
+                %a.foldable-toggle{:href => "#"} (toggle)
+                %a.dropdown-link.parameter{"data-organisation" => "12466", "data-type" => "organisation", :href => "/dsr/view?organisation=12466"}
+                  WEST
+                %ul#organisation-fold-12466.organisation-fold
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12441", "data-type" => "organisation", :href => "/dsr/view?organisation=12441"}
+                      NYABIHU
+                    %ul#organisation-fold-12441.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12662", "data-type" => "organisation", :href => "/dsr/view?organisation=12662"}
+                          MUKAMIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12609", "data-type" => "organisation", :href => "/dsr/view?organisation=12609"}
+                          KINTOBO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12578", "data-type" => "organisation", :href => "/dsr/view?organisation=12578"}
+                          KARAGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12555", "data-type" => "organisation", :href => "/dsr/view?organisation=12555"}
+                          JOMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12561", "data-type" => "organisation", :href => "/dsr/view?organisation=12561"}
+                          KABATWA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12675", "data-type" => "organisation", :href => "/dsr/view?organisation=12675"}
+                          MURINGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12841", "data-type" => "organisation", :href => "/dsr/view?organisation=12841"}
+                          NYABIHU DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12815", "data-type" => "organisation", :href => "/dsr/view?organisation=12815"}
+                          SHYIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12486", "data-type" => "organisation", :href => "/dsr/view?organisation=12486"}
+                          BIGOGWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12768", "data-type" => "organisation", :href => "/dsr/view?organisation=12768"}
+                          RUGERA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12554", "data-type" => "organisation", :href => "/dsr/view?organisation=12554"}
+                          JENDA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12751", "data-type" => "organisation", :href => "/dsr/view?organisation=12751"}
+                          RAMBURA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12787", "data-type" => "organisation", :href => "/dsr/view?organisation=12787"}
+                          RUREMBO
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12451", "data-type" => "organisation", :href => "/dsr/view?organisation=12451"}
+                      RUSIZI
+                    %ul#organisation-fold-12451.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12535", "data-type" => "organisation", :href => "/dsr/view?organisation=12535"}
+                          GIHEKE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12501", "data-type" => "organisation", :href => "/dsr/view?organisation=12501"}
+                          BUTARE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12718", "data-type" => "organisation", :href => "/dsr/view?organisation=12718"}
+                          NKANKA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12806", "data-type" => "organisation", :href => "/dsr/view?organisation=12806"}
+                          RWIMBOGO (RUSIZI)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12530", "data-type" => "organisation", :href => "/dsr/view?organisation=12530"}
+                          GASHONGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12650", "data-type" => "organisation", :href => "/dsr/view?organisation=12650"}
+                          MUGANZA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12722", "data-type" => "organisation", :href => "/dsr/view?organisation=12722"}
+                          NKUNGU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12679", "data-type" => "organisation", :href => "/dsr/view?organisation=12679"}
+                          MURURU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12571", "data-type" => "organisation", :href => "/dsr/view?organisation=12571"}
+                          KAMEMBE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13408", "data-type" => "organisation", :href => "/dsr/view?organisation=13408"}
+                          GIHUNDWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13411", "data-type" => "organisation", :href => "/dsr/view?organisation=13411"}
+                          GIKUNDAMVURA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12544", "data-type" => "organisation", :href => "/dsr/view?organisation=12544"}
+                          GITAMBI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12488", "data-type" => "organisation", :href => "/dsr/view?organisation=12488"}
+                          BUGARAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13412", "data-type" => "organisation", :href => "/dsr/view?organisation=13412"}
+                          NZAHAHA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12720", "data-type" => "organisation", :href => "/dsr/view?organisation=12720"}
+                          NKOMBO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12505", "data-type" => "organisation", :href => "/dsr/view?organisation=12505"}
+                          BWEYEYE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13409", "data-type" => "organisation", :href => "/dsr/view?organisation=13409"}
+                          NYAKARENZO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13424", "data-type" => "organisation", :href => "/dsr/view?organisation=13424"}
+                          NYAKABUYE
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12452", "data-type" => "organisation", :href => "/dsr/view?organisation=12452"}
+                      RUTSIRO
+                    %ul#organisation-fold-12452.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12534", "data-type" => "organisation", :href => "/dsr/view?organisation=12534"}
+                          GIHANGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12598", "data-type" => "organisation", :href => "/dsr/view?organisation=12598"}
+                          KIGEYO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12628", "data-type" => "organisation", :href => "/dsr/view?organisation=12628"}
+                          MANIHIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12770", "data-type" => "organisation", :href => "/dsr/view?organisation=12770"}
+                          RUHANGO (RUTSIRO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12454", "data-type" => "organisation", :href => "/dsr/view?organisation=12454"}
+                          NYABIRASI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12792", "data-type" => "organisation", :href => "/dsr/view?organisation=12792"}
+                          RUSEBEYA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12691", "data-type" => "organisation", :href => "/dsr/view?organisation=12691"}
+                          MUSHONYI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12682", "data-type" => "organisation", :href => "/dsr/view?organisation=12682"}
+                          MUSASA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12692", "data-type" => "organisation", :href => "/dsr/view?organisation=12692"}
+                          MUSHUBATI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12618", "data-type" => "organisation", :href => "/dsr/view?organisation=12618"}
+                          KIVUMU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12676", "data-type" => "organisation", :href => "/dsr/view?organisation=12676"}
+                          MURUNDA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12487", "data-type" => "organisation", :href => "/dsr/view?organisation=12487"}
+                          BONEZA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12668", "data-type" => "organisation", :href => "/dsr/view?organisation=12668"}
+                          MUKURA (RUTSIRO)
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12448", "data-type" => "organisation", :href => "/dsr/view?organisation=12448"}
+                      RUBAVU
+                    %ul#organisation-fold-12448.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12845", "data-type" => "organisation", :href => "/dsr/view?organisation=12845"}
+                          RUBAVU DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12749", "data-type" => "organisation", :href => "/dsr/view?organisation=12749"}
+                          NYUNDO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12573", "data-type" => "organisation", :href => "/dsr/view?organisation=12573"}
+                          KANAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12540", "data-type" => "organisation", :href => "/dsr/view?organisation=12540"}
+                          GISENYI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12494", "data-type" => "organisation", :href => "/dsr/view?organisation=12494"}
+                          BUSASAMANA (RUBAVU)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13368", "data-type" => "organisation", :href => "/dsr/view?organisation=13368"}
+                          BUGESHI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13373", "data-type" => "organisation", :href => "/dsr/view?organisation=13373"}
+                          NYAKILIBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12647", "data-type" => "organisation", :href => "/dsr/view?organisation=12647"}
+                          MUDENDE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13371", "data-type" => "organisation", :href => "/dsr/view?organisation=13371"}
+                          KANZENZE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13375", "data-type" => "organisation", :href => "/dsr/view?organisation=13375"}
+                          RUGERERO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13370", "data-type" => "organisation", :href => "/dsr/view?organisation=13370"}
+                          CYANZARWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12740", "data-type" => "organisation", :href => "/dsr/view?organisation=12740"}
+                          NYAMYUMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12758", "data-type" => "organisation", :href => "/dsr/view?organisation=12758"}
+                          RUBAVU SECTOR
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12444", "data-type" => "organisation", :href => "/dsr/view?organisation=12444"}
+                      NYAMASHEKE
+                    %ul#organisation-fold-12444.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12752", "data-type" => "organisation", :href => "/dsr/view?organisation=12752"}
+                          RANGIRO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12614", "data-type" => "organisation", :href => "/dsr/view?organisation=12614"}
+                          KIRIMBI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12536", "data-type" => "organisation", :href => "/dsr/view?organisation=12536"}
+                          GIHOMBO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12496", "data-type" => "organisation", :href => "/dsr/view?organisation=12496"}
+                          BUSHEKERI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12584", "data-type" => "organisation", :href => "/dsr/view?organisation=12584"}
+                          KARENGERA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12514", "data-type" => "organisation", :href => "/dsr/view?organisation=12514"}
+                          CYATO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12728", "data-type" => "organisation", :href => "/dsr/view?organisation=12728"}
+                          NYABITEKERI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12626", "data-type" => "organisation", :href => "/dsr/view?organisation=12626"}
+                          MAHEMBE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12565", "data-type" => "organisation", :href => "/dsr/view?organisation=12565"}
+                          KAGANO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12581", "data-type" => "organisation", :href => "/dsr/view?organisation=12581"}
+                          KARAMBI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12771", "data-type" => "organisation", :href => "/dsr/view?organisation=12771"}
+                          RUHARAMBUGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12812", "data-type" => "organisation", :href => "/dsr/view?organisation=12812"}
+                          SHANGI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12624", "data-type" => "organisation", :href => "/dsr/view?organisation=12624"}
+                          MACUBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12497", "data-type" => "organisation", :href => "/dsr/view?organisation=12497"}
+                          BUSHENGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12575", "data-type" => "organisation", :href => "/dsr/view?organisation=12575"}
+                          KANJONGO
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12478", "data-type" => "organisation", :href => "/dsr/view?organisation=12478"}
+                      KARONGI
+                    %ul#organisation-fold-12478.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12672", "data-type" => "organisation", :href => "/dsr/view?organisation=12672"}
+                          MURAMBI (KARONGI)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12543", "data-type" => "organisation", :href => "/dsr/view?organisation=12543"}
+                          GISHYITA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12646", "data-type" => "organisation", :href => "/dsr/view?organisation=12646"}
+                          MUBUGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12528", "data-type" => "organisation", :href => "/dsr/view?organisation=12528"}
+                          GASHARI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12763", "data-type" => "organisation", :href => "/dsr/view?organisation=12763"}
+                          RUGANDA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12801", "data-type" => "organisation", :href => "/dsr/view?organisation=12801"}
+                          RWANKUBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12762", "data-type" => "organisation", :href => "/dsr/view?organisation=12762"}
+                          RUGABANO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12760", "data-type" => "organisation", :href => "/dsr/view?organisation=12760"}
+                          RUBENGERA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12824", "data-type" => "organisation", :href => "/dsr/view?organisation=12824"}
+                          TWUMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12834", "data-type" => "organisation", :href => "/dsr/view?organisation=12834"}
+                          KARONGI DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12677", "data-type" => "organisation", :href => "/dsr/view?organisation=12677"}
+                          MURUNDI (KARONGI)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12696", "data-type" => "organisation", :href => "/dsr/view?organisation=12696"}
+                          MUTUNTU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12507", "data-type" => "organisation", :href => "/dsr/view?organisation=12507"}
+                          BWISHYURA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12545", "data-type" => "organisation", :href => "/dsr/view?organisation=12545"}
+                          GITESI
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12440", "data-type" => "organisation", :href => "/dsr/view?organisation=12440"}
+                      NGORORERO
+                    %ul#organisation-fold-12440.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13381", "data-type" => "organisation", :href => "/dsr/view?organisation=13381"}
+                          KAGEYO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12840", "data-type" => "organisation", :href => "/dsr/view?organisation=12840"}
+                          NGORORERO DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12819", "data-type" => "organisation", :href => "/dsr/view?organisation=12819"}
+                          SOVU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12532", "data-type" => "organisation", :href => "/dsr/view?organisation=12532"}
+                          GATUMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12562", "data-type" => "organisation", :href => "/dsr/view?organisation=12562"}
+                          KABAYA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12741", "data-type" => "organisation", :href => "/dsr/view?organisation=12741"}
+                          NYANGE (NGORORERO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12705", "data-type" => "organisation", :href => "/dsr/view?organisation=12705"}
+                          NDARO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12659", "data-type" => "organisation", :href => "/dsr/view?organisation=12659"}
+                          MUHORORO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12548", "data-type" => "organisation", :href => "/dsr/view?organisation=12548"}
+                          HINDIRO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12506", "data-type" => "organisation", :href => "/dsr/view?organisation=12506"}
+                          BWIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12637", "data-type" => "organisation", :href => "/dsr/view?organisation=12637"}
+                          MATYAZO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12586", "data-type" => "organisation", :href => "/dsr/view?organisation=12586"}
+                          KAVUMU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12655", "data-type" => "organisation", :href => "/dsr/view?organisation=12655"}
+                          MUHANDA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12716", "data-type" => "organisation", :href => "/dsr/view?organisation=12716"}
+                          NGORORERO SECTOR
+              %li.foldable
+                %a.foldable-toggle{:href => "#"} (toggle)
+                %a.dropdown-link.parameter{"data-organisation" => "12464", "data-type" => "organisation", :href => "/dsr/view?organisation=12464"}
+                  KIGALI CITY
+                %ul#organisation-fold-12464.organisation-fold
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12472", "data-type" => "organisation", :href => "/dsr/view?organisation=12472"}
+                      GASABO
+                    %ul#organisation-fold-12472.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12797", "data-type" => "organisation", :href => "/dsr/view?organisation=12797"}
+                          RUTUNGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12708", "data-type" => "organisation", :href => "/dsr/view?organisation=12708"}
+                          NDUBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12550", "data-type" => "organisation", :href => "/dsr/view?organisation=12550"}
+                          JABANA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13387", "data-type" => "organisation", :href => "/dsr/view?organisation=13387"}
+                          GISOZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12601", "data-type" => "organisation", :href => "/dsr/view?organisation=12601"}
+                          KIMIRONKO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13388", "data-type" => "organisation", :href => "/dsr/view?organisation=13388"}
+                          GATSATA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12537", "data-type" => "organisation", :href => "/dsr/view?organisation=12537"}
+                          GIKOMERO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12490", "data-type" => "organisation", :href => "/dsr/view?organisation=12490"}
+                          BUMBOGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12828", "data-type" => "organisation", :href => "/dsr/view?organisation=12828"}
+                          GASABO SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13386", "data-type" => "organisation", :href => "/dsr/view?organisation=13386"}
+                          RUSORORO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12707", "data-type" => "organisation", :href => "/dsr/view?organisation=12707"}
+                          NDERA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12563", "data-type" => "organisation", :href => "/dsr/view?organisation=12563"}
+                          KACYIRU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13389", "data-type" => "organisation", :href => "/dsr/view?organisation=13389"}
+                          REMERA (GASABO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12551", "data-type" => "organisation", :href => "/dsr/view?organisation=12551"}
+                          JALI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12611", "data-type" => "organisation", :href => "/dsr/view?organisation=12611"}
+                          KINYINYA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13391", "data-type" => "organisation", :href => "/dsr/view?organisation=13391"}
+                          KIMIHURURA
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12446", "data-type" => "organisation", :href => "/dsr/view?organisation=12446"}
+                      NYARUGENGE
+                    %ul#organisation-fold-12446.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12625", "data-type" => "organisation", :href => "/dsr/view?organisation=12625"}
+                          MAGERAGERE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13383", "data-type" => "organisation", :href => "/dsr/view?organisation=13383"}
+                          KANYINYA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13393", "data-type" => "organisation", :href => "/dsr/view?organisation=13393"}
+                          RWEZAMENYO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12733", "data-type" => "organisation", :href => "/dsr/view?organisation=12733"}
+                          NYAKABANDA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12746", "data-type" => "organisation", :href => "/dsr/view?organisation=12746"}
+                          NYARUGENGE SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12597", "data-type" => "organisation", :href => "/dsr/view?organisation=12597"}
+                          KIGALI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12657", "data-type" => "organisation", :href => "/dsr/view?organisation=12657"}
+                          MUHIMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12602", "data-type" => "organisation", :href => "/dsr/view?organisation=12602"}
+                          KIMISAGARA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12738", "data-type" => "organisation", :href => "/dsr/view?organisation=12738"}
+                          NYAMIRAMBO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13390", "data-type" => "organisation", :href => "/dsr/view?organisation=13390"}
+                          GITEGA
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12480", "data-type" => "organisation", :href => "/dsr/view?organisation=12480"}
+                      KICUKIRO
+                    %ul#organisation-fold-12480.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12747", "data-type" => "organisation", :href => "/dsr/view?organisation=12747"}
+                          NYARUGUNGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13392", "data-type" => "organisation", :href => "/dsr/view?organisation=13392"}
+                          KIGARAMA (KICUKIRO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12595", "data-type" => "organisation", :href => "/dsr/view?organisation=12595"}
+                          KICUKIRO SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12632", "data-type" => "organisation", :href => "/dsr/view?organisation=12632"}
+                          MASAKA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12717", "data-type" => "organisation", :href => "/dsr/view?organisation=12717"}
+                          NIBOYE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12538", "data-type" => "organisation", :href => "/dsr/view?organisation=12538"}
+                          GIKONDO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12576", "data-type" => "organisation", :href => "/dsr/view?organisation=12576"}
+                          KANOMBE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13395", "data-type" => "organisation", :href => "/dsr/view?organisation=13395"}
+                          KAGARAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12520", "data-type" => "organisation", :href => "/dsr/view?organisation=12520"}
+                          GAHANGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13394", "data-type" => "organisation", :href => "/dsr/view?organisation=13394"}
+                          GATENGA
+              %li.foldable
+                %a.foldable-toggle{:href => "#"} (toggle)
+                %a.dropdown-link.parameter{"data-organisation" => "12467", "data-type" => "organisation", :href => "/dsr/view?organisation=12467"}
+                  NORTH
+                %ul#organisation-fold-12467.organisation-fold
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12470", "data-type" => "organisation", :href => "/dsr/view?organisation=12470"}
+                      BURERA
+                    %ul#organisation-fold-12470.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12775", "data-type" => "organisation", :href => "/dsr/view?organisation=12775"}
+                          RUHUNDE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12620", "data-type" => "organisation", :href => "/dsr/view?organisation=12620"}
+                          KIVUYE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12610", "data-type" => "organisation", :href => "/dsr/view?organisation=12610"}
+                          KINYABABA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12524", "data-type" => "organisation", :href => "/dsr/view?organisation=12524"}
+                          GAHUNGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12804", "data-type" => "organisation", :href => "/dsr/view?organisation=12804"}
+                          RWERERE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12789", "data-type" => "organisation", :href => "/dsr/view?organisation=12789"}
+                          RUSARABUGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12568", "data-type" => "organisation", :href => "/dsr/view?organisation=12568"}
+                          KAGOGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13421", "data-type" => "organisation", :href => "/dsr/view?organisation=13421"}
+                          CYANIKA (BURERA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12710", "data-type" => "organisation", :href => "/dsr/view?organisation=12710"}
+                          NEMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12502", "data-type" => "organisation", :href => "/dsr/view?organisation=12502"}
+                          BUTARO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13367", "data-type" => "organisation", :href => "/dsr/view?organisation=13367"}
+                          GATEBE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12767", "data-type" => "organisation", :href => "/dsr/view?organisation=12767"}
+                          RUGENGABARI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12827", "data-type" => "organisation", :href => "/dsr/view?organisation=12827"}
+                          BURERA SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13362", "data-type" => "organisation", :href => "/dsr/view?organisation=13362"}
+                          GITOVU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13361", "data-type" => "organisation", :href => "/dsr/view?organisation=13361"}
+                          CYERU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13420", "data-type" => "organisation", :href => "/dsr/view?organisation=13420"}
+                          RUGARAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12491", "data-type" => "organisation", :href => "/dsr/view?organisation=12491"}
+                          BUNGWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12608", "data-type" => "organisation", :href => "/dsr/view?organisation=12608"}
+                          KINONI
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12450", "data-type" => "organisation", :href => "/dsr/view?organisation=12450"}
+                      RULINDO
+                    %ul#organisation-fold-12450.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12817", "data-type" => "organisation", :href => "/dsr/view?organisation=12817"}
+                          SHYORONGI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12615", "data-type" => "organisation", :href => "/dsr/view?organisation=12615"}
+                          KISARO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12633", "data-type" => "organisation", :href => "/dsr/view?organisation=12633"}
+                          MASORO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12781", "data-type" => "organisation", :href => "/dsr/view?organisation=12781"}
+                          RUKOZO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12715", "data-type" => "organisation", :href => "/dsr/view?organisation=12715"}
+                          NGOMA (RULINDO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12607", "data-type" => "organisation", :href => "/dsr/view?organisation=12607"}
+                          KINIHIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12516", "data-type" => "organisation", :href => "/dsr/view?organisation=12516"}
+                          CYUNGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12641", "data-type" => "organisation", :href => "/dsr/view?organisation=12641"}
+                          MBOGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12503", "data-type" => "organisation", :href => "/dsr/view?organisation=12503"}
+                          BUYOGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13380", "data-type" => "organisation", :href => "/dsr/view?organisation=13380"}
+                          RUSIGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12673", "data-type" => "organisation", :href => "/dsr/view?organisation=12673"}
+                          MURAMBI (RULINDO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12723", "data-type" => "organisation", :href => "/dsr/view?organisation=12723"}
+                          NTARABANA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13378", "data-type" => "organisation", :href => "/dsr/view?organisation=13378"}
+                          BUREGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12823", "data-type" => "organisation", :href => "/dsr/view?organisation=12823"}
+                          TUMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12485", "data-type" => "organisation", :href => "/dsr/view?organisation=12485"}
+                          BASE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13379", "data-type" => "organisation", :href => "/dsr/view?organisation=13379"}
+                          CYINZUZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12498", "data-type" => "organisation", :href => "/dsr/view?organisation=12498"}
+                          BUSHOKI
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12474", "data-type" => "organisation", :href => "/dsr/view?organisation=12474"}
+                      GICUMBI
+                    %ul#organisation-fold-12474.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12794", "data-type" => "organisation", :href => "/dsr/view?organisation=12794"}
+                          RUSHAKI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12566", "data-type" => "organisation", :href => "/dsr/view?organisation=12566"}
+                          KAGEYO (GICUMBI)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13374", "data-type" => "organisation", :href => "/dsr/view?organisation=13374"}
+                          NYAMIYAGA (GICUMBI)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12742", "data-type" => "organisation", :href => "/dsr/view?organisation=12742"}
+                          NYANKENKE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12796", "data-type" => "organisation", :href => "/dsr/view?organisation=12796"}
+                          RUTARE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12779", "data-type" => "organisation", :href => "/dsr/view?organisation=12779"}
+                          RUKOMO (GICUMBI)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12695", "data-type" => "organisation", :href => "/dsr/view?organisation=12695"}
+                          MUTETE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12546", "data-type" => "organisation", :href => "/dsr/view?organisation=12546"}
+                          GITI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13363", "data-type" => "organisation", :href => "/dsr/view?organisation=13363"}
+                          MUKARANGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12799", "data-type" => "organisation", :href => "/dsr/view?organisation=12799"}
+                          RWAMIKO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13360", "data-type" => "organisation", :href => "/dsr/view?organisation=13360"}
+                          CYUMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13366", "data-type" => "organisation", :href => "/dsr/view?organisation=13366"}
+                          SHANGASHA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12629", "data-type" => "organisation", :href => "/dsr/view?organisation=12629"}
+                          MANYAGIRO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13369", "data-type" => "organisation", :href => "/dsr/view?organisation=13369"}
+                          RUVUNE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12830", "data-type" => "organisation", :href => "/dsr/view?organisation=12830"}
+                          GICUMBI SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12489", "data-type" => "organisation", :href => "/dsr/view?organisation=12489"}
+                          BUKURE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12574", "data-type" => "organisation", :href => "/dsr/view?organisation=12574"}
+                          KANIGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12667", "data-type" => "organisation", :href => "/dsr/view?organisation=12667"}
+                          MUKO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12759", "data-type" => "organisation", :href => "/dsr/view?organisation=12759"}
+                          RUBAYA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12644", "data-type" => "organisation", :href => "/dsr/view?organisation=12644"}
+                          MIYOVE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12510", "data-type" => "organisation", :href => "/dsr/view?organisation=12510"}
+                          BYUMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12508", "data-type" => "organisation", :href => "/dsr/view?organisation=12508"}
+                          BWISIGE
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12483", "data-type" => "organisation", :href => "/dsr/view?organisation=12483"}
+                      MUSANZE
+                    %ul#organisation-fold-12483.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12813", "data-type" => "organisation", :href => "/dsr/view?organisation=12813"}
+                          SHINGIRO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12605", "data-type" => "organisation", :href => "/dsr/view?organisation=12605"}
+                          KINIGI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13419", "data-type" => "organisation", :href => "/dsr/view?organisation=13419"}
+                          NYANGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13364", "data-type" => "organisation", :href => "/dsr/view?organisation=13364"}
+                          GACACA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12838", "data-type" => "organisation", :href => "/dsr/view?organisation=12838"}
+                          MUSANZE SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12660", "data-type" => "organisation", :href => "/dsr/view?organisation=12660"}
+                          MUHOZA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12753", "data-type" => "organisation", :href => "/dsr/view?organisation=12753"}
+                          REMERA (MUSANZE)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12666", "data-type" => "organisation", :href => "/dsr/view?organisation=12666"}
+                          MUKO (MUSANZE)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12603", "data-type" => "organisation", :href => "/dsr/view?organisation=12603"}
+                          KIMONYI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12802", "data-type" => "organisation", :href => "/dsr/view?organisation=12802"}
+                          RWAZA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12721", "data-type" => "organisation", :href => "/dsr/view?organisation=12721"}
+                          NKOTSI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12527", "data-type" => "organisation", :href => "/dsr/view?organisation=12527"}
+                          GASHAKI (MUSANZE)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12517", "data-type" => "organisation", :href => "/dsr/view?organisation=12517"}
+                          CYUVE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12499", "data-type" => "organisation", :href => "/dsr/view?organisation=12499"}
+                          BUSOGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13418", "data-type" => "organisation", :href => "/dsr/view?organisation=13418"}
+                          GATARAGA
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12471", "data-type" => "organisation", :href => "/dsr/view?organisation=12471"}
+                      GAKENKE
+                    %ul#organisation-fold-12471.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12658", "data-type" => "organisation", :href => "/dsr/view?organisation=12658"}
+                          MUHONDO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12699", "data-type" => "organisation", :href => "/dsr/view?organisation=12699"}
+                          MUZO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13377", "data-type" => "organisation", :href => "/dsr/view?organisation=13377"}
+                          MATABA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12635", "data-type" => "organisation", :href => "/dsr/view?organisation=12635"}
+                          KIVURUGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12709", "data-type" => "organisation", :href => "/dsr/view?organisation=12709"}
+                          NEMBA (GAKENKE)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12495", "data-type" => "organisation", :href => "/dsr/view?organisation=12495"}
+                          BUSENGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13372", "data-type" => "organisation", :href => "/dsr/view?organisation=13372"}
+                          GAKENKE SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12457", "data-type" => "organisation", :href => "/dsr/view?organisation=12457"}
+                          COKO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12790", "data-type" => "organisation", :href => "/dsr/view?organisation=12790"}
+                          RUSASA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12795", "data-type" => "organisation", :href => "/dsr/view?organisation=12795"}
+                          RUSHASHI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12572", "data-type" => "organisation", :href => "/dsr/view?organisation=12572"}
+                          JANJA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12552", "data-type" => "organisation", :href => "/dsr/view?organisation=12552"}
+                          GATONDE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13376", "data-type" => "organisation", :href => "/dsr/view?organisation=13376"}
+                          MUYONGWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12619", "data-type" => "organisation", :href => "/dsr/view?organisation=12619"}
+                          KARAMBO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12529", "data-type" => "organisation", :href => "/dsr/view?organisation=12529"}
+                          GASHENYI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12783", "data-type" => "organisation", :href => "/dsr/view?organisation=12783"}
+                          RULI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12654", "data-type" => "organisation", :href => "/dsr/view?organisation=12654"}
+                          MINAZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12582", "data-type" => "organisation", :href => "/dsr/view?organisation=12582"}
+                          KAMUBUGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12511", "data-type" => "organisation", :href => "/dsr/view?organisation=12511"}
+                          CYABINGO
+              %li.foldable
+                %a.foldable-toggle{:href => "#"} (toggle)
+                %a.dropdown-link.parameter{"data-organisation" => "12465", "data-type" => "organisation", :href => "/dsr/view?organisation=12465"}
+                  SOUTH
+                %ul#organisation-fold-12465.organisation-fold
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12482", "data-type" => "organisation", :href => "/dsr/view?organisation=12482"}
+                      MUHANGA
+                    %ul#organisation-fold-12482.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12727", "data-type" => "organisation", :href => "/dsr/view?organisation=12727"}
+                          NYABINONI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12556", "data-type" => "organisation", :href => "/dsr/view?organisation=12556"}
+                          KABACUZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12757", "data-type" => "organisation", :href => "/dsr/view?organisation=12757"}
+                          RONGI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12766", "data-type" => "organisation", :href => "/dsr/view?organisation=12766"}
+                          RUGENDABARI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12588", "data-type" => "organisation", :href => "/dsr/view?organisation=12588"}
+                          KIBANGU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12735", "data-type" => "organisation", :href => "/dsr/view?organisation=12735"}
+                          NYAMABUYE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12816", "data-type" => "organisation", :href => "/dsr/view?organisation=12816"}
+                          SHYOGWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12622", "data-type" => "organisation", :href => "/dsr/view?organisation=12622"}
+                          KIYUMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13396", "data-type" => "organisation", :href => "/dsr/view?organisation=13396"}
+                          MUHANGA SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12837", "data-type" => "organisation", :href => "/dsr/view?organisation=12837"}
+                          MUHANGA DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12748", "data-type" => "organisation", :href => "/dsr/view?organisation=12748"}
+                          NYARUSANGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12690", "data-type" => "organisation", :href => "/dsr/view?organisation=12690"}
+                          MUSHISHIRO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12515", "data-type" => "organisation", :href => "/dsr/view?organisation=12515"}
+                          CYEZA
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12447", "data-type" => "organisation", :href => "/dsr/view?organisation=12447"}
+                      NYARUGURU
+                    %ul#organisation-fold-12447.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12492", "data-type" => "organisation", :href => "/dsr/view?organisation=12492"}
+                          BUSANZE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12785", "data-type" => "organisation", :href => "/dsr/view?organisation=12785"}
+                          RURAMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12462", "data-type" => "organisation", :href => "/dsr/view?organisation=12462"}
+                          MUNINI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12617", "data-type" => "organisation", :href => "/dsr/view?organisation=12617"}
+                          KIVU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13414", "data-type" => "organisation", :href => "/dsr/view?organisation=13414"}
+                          NGERA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12793", "data-type" => "organisation", :href => "/dsr/view?organisation=12793"}
+                          RUSENGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12713", "data-type" => "organisation", :href => "/dsr/view?organisation=12713"}
+                          NGOMA (NYARUGURU)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12512", "data-type" => "organisation", :href => "/dsr/view?organisation=12512"}
+                          CYAHINDA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12589", "data-type" => "organisation", :href => "/dsr/view?organisation=12589"}
+                          KIBEHO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12773", "data-type" => "organisation", :href => "/dsr/view?organisation=12773"}
+                          RUHERU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12634", "data-type" => "organisation", :href => "/dsr/view?organisation=12634"}
+                          MATA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12649", "data-type" => "organisation", :href => "/dsr/view?organisation=12649"}
+                          MUGANZA (NYARUGURU)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12732", "data-type" => "organisation", :href => "/dsr/view?organisation=12732"}
+                          NYAGISOZI (NYARUGURU)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12726", "data-type" => "organisation", :href => "/dsr/view?organisation=12726"}
+                          NYABIMATA
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12445", "data-type" => "organisation", :href => "/dsr/view?organisation=12445"}
+                      NYANZA
+                    %ul#organisation-fold-12445.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12590", "data-type" => "organisation", :href => "/dsr/view?organisation=12590"}
+                          KIBIRIZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12599", "data-type" => "organisation", :href => "/dsr/view?organisation=12599"}
+                          KIGOMA (NYANZA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12665", "data-type" => "organisation", :href => "/dsr/view?organisation=12665"}
+                          MUKINGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12697", "data-type" => "organisation", :href => "/dsr/view?organisation=12697"}
+                          MUYIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12798", "data-type" => "organisation", :href => "/dsr/view?organisation=12798"}
+                          RWABICUMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12725", "data-type" => "organisation", :href => "/dsr/view?organisation=12725"}
+                          NTYAZO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12844", "data-type" => "organisation", :href => "/dsr/view?organisation=12844"}
+                          NYANZA DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12731", "data-type" => "organisation", :href => "/dsr/view?organisation=12731"}
+                          NYAGISOZI (NYANZA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12493", "data-type" => "organisation", :href => "/dsr/view?organisation=12493"}
+                          BUSASAMANA (NYANZA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12458", "data-type" => "organisation", :href => "/dsr/view?organisation=12458"}
+                          CYABAKAMYI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12500", "data-type" => "organisation", :href => "/dsr/view?organisation=12500"}
+                          BUSORO
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12443", "data-type" => "organisation", :href => "/dsr/view?organisation=12443"}
+                      NYAMAGABE
+                    %ul#organisation-fold-12443.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12593", "data-type" => "organisation", :href => "/dsr/view?organisation=12593"}
+                          KITABI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12640", "data-type" => "organisation", :href => "/dsr/view?organisation=12640"}
+                          MUGANO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12825", "data-type" => "organisation", :href => "/dsr/view?organisation=12825"}
+                          UWINKINGI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12719", "data-type" => "organisation", :href => "/dsr/view?organisation=12719"}
+                          GASAKA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12525", "data-type" => "organisation", :href => "/dsr/view?organisation=12525"}
+                          GATARE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12843", "data-type" => "organisation", :href => "/dsr/view?organisation=12843"}
+                          NYAMAGABE DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12616", "data-type" => "organisation", :href => "/dsr/view?organisation=12616"}
+                          MBAZI (NYAMAGABE)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12513", "data-type" => "organisation", :href => "/dsr/view?organisation=12513"}
+                          CYANIKA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12592", "data-type" => "organisation", :href => "/dsr/view?organisation=12592"}
+                          KIBUMBWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12459", "data-type" => "organisation", :href => "/dsr/view?organisation=12459"}
+                          KADUHA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12693", "data-type" => "organisation", :href => "/dsr/view?organisation=12693"}
+                          NKOMANE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12684", "data-type" => "organisation", :href => "/dsr/view?organisation=12684"}
+                          MUSHUBI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12461", "data-type" => "organisation", :href => "/dsr/view?organisation=12461"}
+                          MUSANGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12564", "data-type" => "organisation", :href => "/dsr/view?organisation=12564"}
+                          KAMEGERI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12570", "data-type" => "organisation", :href => "/dsr/view?organisation=12570"}
+                          KIBIRIZI (NYAMAGABE)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13407", "data-type" => "organisation", :href => "/dsr/view?organisation=13407"}
+                          BURUHUKIRO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12681", "data-type" => "organisation", :href => "/dsr/view?organisation=12681"}
+                          MUSEBEYA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12821", "data-type" => "organisation", :href => "/dsr/view?organisation=12821"}
+                          TARE
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12475", "data-type" => "organisation", :href => "/dsr/view?organisation=12475"}
+                      GISAGARA
+                    %ul#organisation-fold-12475.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13410", "data-type" => "organisation", :href => "/dsr/view?organisation=13410"}
+                          GISHUBI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12463", "data-type" => "organisation", :href => "/dsr/view?organisation=12463"}
+                          NDORA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12743", "data-type" => "organisation", :href => "/dsr/view?organisation=12743"}
+                          NYANZA SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12627", "data-type" => "organisation", :href => "/dsr/view?organisation=12627"}
+                          MAMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12653", "data-type" => "organisation", :href => "/dsr/view?organisation=12653"}
+                          MUGOMBWA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12831", "data-type" => "organisation", :href => "/dsr/view?organisation=12831"}
+                          GISAGARA SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12591", "data-type" => "organisation", :href => "/dsr/view?organisation=12591"}
+                          KIBILIZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12686", "data-type" => "organisation", :href => "/dsr/view?organisation=12686"}
+                          MUSHA (GISAGARA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12664", "data-type" => "organisation", :href => "/dsr/view?organisation=12664"}
+                          MUKINDO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13415", "data-type" => "organisation", :href => "/dsr/view?organisation=13415"}
+                          KIGEMBE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12811", "data-type" => "organisation", :href => "/dsr/view?organisation=12811"}
+                          SAVE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12577", "data-type" => "organisation", :href => "/dsr/view?organisation=12577"}
+                          KANSI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12648", "data-type" => "organisation", :href => "/dsr/view?organisation=12648"}
+                          MUGANZA (GISAGARA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12539", "data-type" => "organisation", :href => "/dsr/view?organisation=12539"}
+                          GIKONKO
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12476", "data-type" => "organisation", :href => "/dsr/view?organisation=12476"}
+                      HUYE
+                    %ul#organisation-fold-12476.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12772", "data-type" => "organisation", :href => "/dsr/view?organisation=12772"}
+                          RUHASHYA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12549", "data-type" => "organisation", :href => "/dsr/view?organisation=12549"}
+                          HUYE SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12822", "data-type" => "organisation", :href => "/dsr/view?organisation=12822"}
+                          TUMBA (HUYE)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13406", "data-type" => "organisation", :href => "/dsr/view?organisation=13406"}
+                          KINAZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12800", "data-type" => "organisation", :href => "/dsr/view?organisation=12800"}
+                          RWANIRO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12630", "data-type" => "organisation", :href => "/dsr/view?organisation=12630"}
+                          MARABA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12714", "data-type" => "organisation", :href => "/dsr/view?organisation=12714"}
+                          NGOMA (HUYE)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13413", "data-type" => "organisation", :href => "/dsr/view?organisation=13413"}
+                          MUKURA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12791", "data-type" => "organisation", :href => "/dsr/view?organisation=12791"}
+                          RUSATIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12818", "data-type" => "organisation", :href => "/dsr/view?organisation=12818"}
+                          SIMBI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12832", "data-type" => "organisation", :href => "/dsr/view?organisation=12832"}
+                          HUYE DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12639", "data-type" => "organisation", :href => "/dsr/view?organisation=12639"}
+                          MBAZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12600", "data-type" => "organisation", :href => "/dsr/view?organisation=12600"}
+                          KIGOMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12542", "data-type" => "organisation", :href => "/dsr/view?organisation=12542"}
+                          GISHAMVU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12579", "data-type" => "organisation", :href => "/dsr/view?organisation=12579"}
+                          KARAMA (HUYE)
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12449", "data-type" => "organisation", :href => "/dsr/view?organisation=12449"}
+                      RUHANGO
+                    %ul#organisation-fold-12449.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12642", "data-type" => "organisation", :href => "/dsr/view?organisation=12642"}
+                          MBUYE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12769", "data-type" => "organisation", :href => "/dsr/view?organisation=12769"}
+                          RUHANGO SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12724", "data-type" => "organisation", :href => "/dsr/view?organisation=12724"}
+                          NTONGWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12557", "data-type" => "organisation", :href => "/dsr/view?organisation=12557"}
+                          KABAGALI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12604", "data-type" => "organisation", :href => "/dsr/view?organisation=12604"}
+                          KINAZI (RUHANGO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12846", "data-type" => "organisation", :href => "/dsr/view?organisation=12846"}
+                          RUHANGO DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12504", "data-type" => "organisation", :href => "/dsr/view?organisation=12504"}
+                          BWERAMANA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12700", "data-type" => "organisation", :href => "/dsr/view?organisation=12700"}
+                          MWENDO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12606", "data-type" => "organisation", :href => "/dsr/view?organisation=12606"}
+                          KINIHIRA (RUHANGO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12509", "data-type" => "organisation", :href => "/dsr/view?organisation=12509"}
+                          BYIMANA
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12477", "data-type" => "organisation", :href => "/dsr/view?organisation=12477"}
+                      KAMONYI
+                    %ul#organisation-fold-12477.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12680", "data-type" => "organisation", :href => "/dsr/view?organisation=12680"}
+                          MUSAMBIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12778", "data-type" => "organisation", :href => "/dsr/view?organisation=12778"}
+                          RUKOMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12652", "data-type" => "organisation", :href => "/dsr/view?organisation=12652"}
+                          MUGINA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12519", "data-type" => "organisation", :href => "/dsr/view?organisation=12519"}
+                          GACURABWENGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12711", "data-type" => "organisation", :href => "/dsr/view?organisation=12711"}
+                          NGAMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13382", "data-type" => "organisation", :href => "/dsr/view?organisation=13382"}
+                          KARAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13385", "data-type" => "organisation", :href => "/dsr/view?organisation=13385"}
+                          KAYUMBU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12587", "data-type" => "organisation", :href => "/dsr/view?organisation=12587"}
+                          KAYENZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12744", "data-type" => "organisation", :href => "/dsr/view?organisation=12744"}
+                          NYARUBAKA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12765", "data-type" => "organisation", :href => "/dsr/view?organisation=12765"}
+                          RUGALIKA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12833", "data-type" => "organisation", :href => "/dsr/view?organisation=12833"}
+                          KAMONYI SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13397", "data-type" => "organisation", :href => "/dsr/view?organisation=13397"}
+                          NYAMIYAGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12784", "data-type" => "organisation", :href => "/dsr/view?organisation=12784"}
+                          RUNDA
+              %li.foldable
+                %a.foldable-toggle{:href => "#"} (toggle)
+                %a.dropdown-link.parameter{"data-organisation" => "12468", "data-type" => "organisation", :href => "/dsr/view?organisation=12468"}
+                  EAST
+                %ul#organisation-fold-12468.organisation-fold
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12442", "data-type" => "organisation", :href => "/dsr/view?organisation=12442"}
+                      NYAGATARE
+                    %ul#organisation-fold-12442.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12585", "data-type" => "organisation", :href => "/dsr/view?organisation=12585"}
+                          KATABAGEMU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12533", "data-type" => "organisation", :href => "/dsr/view?organisation=12533"}
+                          GATUNDA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12808", "data-type" => "organisation", :href => "/dsr/view?organisation=12808"}
+                          RWIMIYAGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12842", "data-type" => "organisation", :href => "/dsr/view?organisation=12842"}
+                          NYAGATARE DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12580", "data-type" => "organisation", :href => "/dsr/view?organisation=12580"}
+                          KARAMA (NYAGATARE)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12688", "data-type" => "organisation", :href => "/dsr/view?organisation=12688"}
+                          MUSHELI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12729", "data-type" => "organisation", :href => "/dsr/view?organisation=12729"}
+                          NYAGATARE SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12643", "data-type" => "organisation", :href => "/dsr/view?organisation=12643"}
+                          MIMULI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12780", "data-type" => "organisation", :href => "/dsr/view?organisation=12780"}
+                          RUKOMO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12803", "data-type" => "organisation", :href => "/dsr/view?organisation=12803"}
+                          RWEMPASHA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12621", "data-type" => "organisation", :href => "/dsr/view?organisation=12621"}
+                          KIYOMBE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12820", "data-type" => "organisation", :href => "/dsr/view?organisation=12820"}
+                          TABAGWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12636", "data-type" => "organisation", :href => "/dsr/view?organisation=12636"}
+                          MATIMBA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13417", "data-type" => "organisation", :href => "/dsr/view?organisation=13417"}
+                          KARANGAZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13365", "data-type" => "organisation", :href => "/dsr/view?organisation=13365"}
+                          MUKAMA
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12473", "data-type" => "organisation", :href => "/dsr/view?organisation=12473"}
+                      GATSIBO
+                    %ul#organisation-fold-12473.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12754", "data-type" => "organisation", :href => "/dsr/view?organisation=12754"}
+                          REMERA (GATSIBO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12730", "data-type" => "organisation", :href => "/dsr/view?organisation=12730"}
+                          NYAGIHANGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12661", "data-type" => "organisation", :href => "/dsr/view?organisation=12661"}
+                          MUHURA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12567", "data-type" => "organisation", :href => "/dsr/view?organisation=12567"}
+                          KAGEYO (GATSIBO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12807", "data-type" => "organisation", :href => "/dsr/view?organisation=12807"}
+                          RWIMBOGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12623", "data-type" => "organisation", :href => "/dsr/view?organisation=12623"}
+                          KIZIGURO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12560", "data-type" => "organisation", :href => "/dsr/view?organisation=12560"}
+                          KABARORE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12674", "data-type" => "organisation", :href => "/dsr/view?organisation=12674"}
+                          MURAMBI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12460", "data-type" => "organisation", :href => "/dsr/view?organisation=12460"}
+                          GATSIBO SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12829", "data-type" => "organisation", :href => "/dsr/view?organisation=12829"}
+                          GATSIBO DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12764", "data-type" => "organisation", :href => "/dsr/view?organisation=12764"}
+                          RUGARAMA (GATSIBO)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12526", "data-type" => "organisation", :href => "/dsr/view?organisation=12526"}
+                          GASANGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12612", "data-type" => "organisation", :href => "/dsr/view?organisation=12612"}
+                          KIRAMURUZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12712", "data-type" => "organisation", :href => "/dsr/view?organisation=12712"}
+                          NGARAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12547", "data-type" => "organisation", :href => "/dsr/view?organisation=12547"}
+                          GITOKI
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12479", "data-type" => "organisation", :href => "/dsr/view?organisation=12479"}
+                      KAYONZA
+                    %ul#organisation-fold-12479.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12835", "data-type" => "organisation", :href => "/dsr/view?organisation=12835"}
+                          KAYONZA SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12663", "data-type" => "organisation", :href => "/dsr/view?organisation=12663"}
+                          MUKARANGE (KAYONZA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12809", "data-type" => "organisation", :href => "/dsr/view?organisation=12809"}
+                          RWINKWAVU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12737", "data-type" => "organisation", :href => "/dsr/view?organisation=12737"}
+                          NYAMIRAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12786", "data-type" => "organisation", :href => "/dsr/view?organisation=12786"}
+                          RURAMIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12776", "data-type" => "organisation", :href => "/dsr/view?organisation=12776"}
+                          RUKARA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12670", "data-type" => "organisation", :href => "/dsr/view?organisation=12670"}
+                          MURAMA (KAYONZA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12523", "data-type" => "organisation", :href => "/dsr/view?organisation=12523"}
+                          GAHINI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12558", "data-type" => "organisation", :href => "/dsr/view?organisation=12558"}
+                          KABARE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12701", "data-type" => "organisation", :href => "/dsr/view?organisation=12701"}
+                          MWIRI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12706", "data-type" => "organisation", :href => "/dsr/view?organisation=12706"}
+                          NDEGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12678", "data-type" => "organisation", :href => "/dsr/view?organisation=12678"}
+                          MURUNDI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12559", "data-type" => "organisation", :href => "/dsr/view?organisation=12559"}
+                          KABARONDO
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12481", "data-type" => "organisation", :href => "/dsr/view?organisation=12481"}
+                      KIREHE
+                    %ul#organisation-fold-12481.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13401", "data-type" => "organisation", :href => "/dsr/view?organisation=13401"}
+                          MAHAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12521", "data-type" => "organisation", :href => "/dsr/view?organisation=12521"}
+                          GAHARA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12836", "data-type" => "organisation", :href => "/dsr/view?organisation=12836"}
+                          KIREHE DUMMYSECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12683", "data-type" => "organisation", :href => "/dsr/view?organisation=12683"}
+                          MUSAZA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13416", "data-type" => "organisation", :href => "/dsr/view?organisation=13416"}
+                          KIGINA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12745", "data-type" => "organisation", :href => "/dsr/view?organisation=12745"}
+                          NYARUBUYE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12645", "data-type" => "organisation", :href => "/dsr/view?organisation=12645"}
+                          MPANGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12613", "data-type" => "organisation", :href => "/dsr/view?organisation=12613"}
+                          KIREHE SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12704", "data-type" => "organisation", :href => "/dsr/view?organisation=12704"}
+                          NASHO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12739", "data-type" => "organisation", :href => "/dsr/view?organisation=12739"}
+                          NYAMUGALI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12689", "data-type" => "organisation", :href => "/dsr/view?organisation=12689"}
+                          MUSHIKIRI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13405", "data-type" => "organisation", :href => "/dsr/view?organisation=13405"}
+                          KIGARAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13403", "data-type" => "organisation", :href => "/dsr/view?organisation=13403"}
+                          GATORE
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12469", "data-type" => "organisation", :href => "/dsr/view?organisation=12469"}
+                      BUGESERA
+                    %ul#organisation-fold-12469.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13404", "data-type" => "organisation", :href => "/dsr/view?organisation=13404"}
+                          NYARUGENGE (BUGESERA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12569", "data-type" => "organisation", :href => "/dsr/view?organisation=12569"}
+                          KAMABUYE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13402", "data-type" => "organisation", :href => "/dsr/view?organisation=13402"}
+                          NGERUKA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12774", "data-type" => "organisation", :href => "/dsr/view?organisation=12774"}
+                          RUHUHA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12736", "data-type" => "organisation", :href => "/dsr/view?organisation=12736"}
+                          NYAMATA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12814", "data-type" => "organisation", :href => "/dsr/view?organisation=12814"}
+                          SHYARA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12685", "data-type" => "organisation", :href => "/dsr/view?organisation=12685"}
+                          MUSENYI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13399", "data-type" => "organisation", :href => "/dsr/view?organisation=13399"}
+                          NTARAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13398", "data-type" => "organisation", :href => "/dsr/view?organisation=13398"}
+                          JURU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12531", "data-type" => "organisation", :href => "/dsr/view?organisation=12531"}
+                          GASHORA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12756", "data-type" => "organisation", :href => "/dsr/view?organisation=12756"}
+                          RILIMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12805", "data-type" => "organisation", :href => "/dsr/view?organisation=12805"}
+                          RWERU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12702", "data-type" => "organisation", :href => "/dsr/view?organisation=12702"}
+                          MWOGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12638", "data-type" => "organisation", :href => "/dsr/view?organisation=12638"}
+                          MAYANGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12631", "data-type" => "organisation", :href => "/dsr/view?organisation=12631"}
+                          MAREBA
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12484", "data-type" => "organisation", :href => "/dsr/view?organisation=12484"}
+                      NGOMA
+                    %ul#organisation-fold-12484.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12839", "data-type" => "organisation", :href => "/dsr/view?organisation=12839"}
+                          NGOMA SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13400", "data-type" => "organisation", :href => "/dsr/view?organisation=13400"}
+                          KAZO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12594", "data-type" => "organisation", :href => "/dsr/view?organisation=12594"}
+                          KIBUNGO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12782", "data-type" => "organisation", :href => "/dsr/view?organisation=12782"}
+                          RUKUMBERI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12826", "data-type" => "organisation", :href => "/dsr/view?organisation=12826"}
+                          ZAZA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12788", "data-type" => "organisation", :href => "/dsr/view?organisation=12788"}
+                          RURENGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12553", "data-type" => "organisation", :href => "/dsr/view?organisation=12553"}
+                          JARAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12755", "data-type" => "organisation", :href => "/dsr/view?organisation=12755"}
+                          REMERA (NGOMA)
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12810", "data-type" => "organisation", :href => "/dsr/view?organisation=12810"}
+                          SAKE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12777", "data-type" => "organisation", :href => "/dsr/view?organisation=12777"}
+                          RUKIRA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12671", "data-type" => "organisation", :href => "/dsr/view?organisation=12671"}
+                          MURAMA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13423", "data-type" => "organisation", :href => "/dsr/view?organisation=13423"}
+                          GASHANDA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13422", "data-type" => "organisation", :href => "/dsr/view?organisation=13422"}
+                          KAREMBO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12694", "data-type" => "organisation", :href => "/dsr/view?organisation=12694"}
+                          MUTENDERI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12651", "data-type" => "organisation", :href => "/dsr/view?organisation=12651"}
+                          MUGESERA
+                  %li.foldable
+                    %a.foldable-toggle{:href => "#"} (toggle)
+                    %a.dropdown-link.parameter{"data-organisation" => "12453", "data-type" => "organisation", :href => "/dsr/view?organisation=12453"}
+                      RWAMAGANA
+                    %ul#organisation-fold-12453.organisation-fold
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12698", "data-type" => "organisation", :href => "/dsr/view?organisation=12698"}
+                          MUYUMBU
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12541", "data-type" => "organisation", :href => "/dsr/view?organisation=12541"}
+                          GISHARI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12522", "data-type" => "organisation", :href => "/dsr/view?organisation=12522"}
+                          GAHENGERI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12518", "data-type" => "organisation", :href => "/dsr/view?organisation=12518"}
+                          FUMBWE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "13384", "data-type" => "organisation", :href => "/dsr/view?organisation=13384"}
+                          MUNYIGINYA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12596", "data-type" => "organisation", :href => "/dsr/view?organisation=12596"}
+                          KIGABIRO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12847", "data-type" => "organisation", :href => "/dsr/view?organisation=12847"}
+                          RWAMAGANA SECTOR
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12750", "data-type" => "organisation", :href => "/dsr/view?organisation=12750"}
+                          NZIGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12687", "data-type" => "organisation", :href => "/dsr/view?organisation=12687"}
+                          MUSHA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12656", "data-type" => "organisation", :href => "/dsr/view?organisation=12656"}
+                          MUHAZI
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12583", "data-type" => "organisation", :href => "/dsr/view?organisation=12583"}
+                          KARENGE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12669", "data-type" => "organisation", :href => "/dsr/view?organisation=12669"}
+                          MUNYAGA
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12734", "data-type" => "organisation", :href => "/dsr/view?organisation=12734"}
+                          NYAKARIRO
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12703", "data-type" => "organisation", :href => "/dsr/view?organisation=12703"}
+                          MWULIRE
+                      %li.foldable
+                        %a.dropdown-link.parameter{"data-organisation" => "12761", "data-type" => "organisation", :href => "/dsr/view?organisation=12761"}
+                          RUBONA
+  .filter
+    %span.bold Objective
+    %span.dropdown.subnav-dropdown
+      %a.selected{"data-type" => "objective", :href => "#"}
+        Please select an objective
+      .hidden.dropdown-list
+        %ul
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=2"}
+                Human Resources
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=3"}
+                Geographical Access
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=4"}
+                Facility Identifiers
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=5"}
+                Drugs, Vaccines, and Consumables
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=6"}
+                Institutional Capacity
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=7"}
+                Financial Access
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=8"}
+                Quality Assurance
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=9"}
+                Service Delivery
+  .right
+    / ADMIN SECTION
+    = succeed "|" do
+      %span
+        %a{:href => "/dsrObjective/create?targetURI=%2Fdsr%2Fview"} Add Objective
+    = succeed "|" do
+      %span
+        %a{:href => "/dsrTarget/create?targetURI=%2Fdsr%2Fview"} Add Target
+    %span
+      %a{:href => "/dsrTargetCategory/create?targetURI=%2Fdsr%2Fview"} Add Target Category
+    / ADMIN SECTION END
