@@ -1,0 +1,128 @@
+.main
+  = render "partials/tab-nav"
+
+
+  %div
+    (a) Enter the total number of staff members that received training in this subject from July 2009 - June 2000, regarddless of how many days' draining they received.
+    %br
+    (b) Enter the cumulative number of training days spent on that module. To do so, add up all of the days spent by every person who participated in that module.
+
+
+  %ul#questions
+    %li.question
+      %h4.section-title
+        %span.question-number 1
+        DISTRICT SUMMARY REPORT (Human Resources for Health x West)
+
+      .selector
+        %span Report Category:
+        %select
+          %option Critical Indicators
+
+    %table.tabular_tree
+      %thead
+        %tr
+          %th Multiple selected
+          %th Management training days
+          %th Nurse training days
+          %th % Nurses A1 Status
+
+      %tbody
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 0px;'} -
+            West
+          %td Total: <span>63</span> (Avg: <span>21</span>)
+          %td Total: <span>63</span> (Avg: <span>21</span>)
+          %td Total: <span>63</span> (Avg: <span>21</span>)
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 20px;'}-
+            Karongi
+          %td Total: <span>21</span> (Avg: <span>2.1</span>)
+          %td Total: <span>21</span> (Avg: <span>2.1</span>)
+          %td Total: <span>21</span> (Avg: <span>2.1</span>)
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Kibuye HD
+          %td 1
+          %td 1
+          %td 1
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Kirinda HD
+          %td 5
+          %td 5
+          %td 5
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Mugonero HD
+          %td 6
+          %td 6
+          %td 6
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Biguhu CS
+          %td 4
+          %td 4
+          %td 4
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Birambo CS
+          %td 3
+          %td 3
+          %td 3
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Bisesero CS
+          %td 6
+          %td 6
+          %td 6
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Bubazi CS
+          %td 4
+          %td 4
+          %td 4
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Gatare (TWUMBA) CS
+          %td 1
+          %td 1
+          %td 1
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Gisovu CS
+          %td 4
+          %td 4
+          %td 4
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 40px;'}|
+            Karongi (Gisunzu) Police CS
+          %td 2
+          %td 2
+          %td 2
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 20px;'}+
+            Ngororero
+          %td Total: <span>21</span> (Avg: <span>2.1</span>)
+          %td Total: <span>21</span> (Avg: <span>2.1</span>)
+          %td Total: <span>21</span> (Avg: <span>2.1</span>)
+        %tr
+          %td
+            %span.tree_sign{:style => 'margin-left: 20px;'}+
+            Nyabihu
+          %td Total: <span>21</span> (Avg: <span>2.1</span>)
+          %td Total: <span>21</span> (Avg: <span>2.1</span>)
+          %td Total: <span>21</span> (Avg: <span>2.1</span>)
