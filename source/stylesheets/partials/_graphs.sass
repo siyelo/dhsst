@@ -1,15 +1,41 @@
 .horizontal-graph
+  font-size: 11px
   thead
-    background: $primary
-    border: 1px solid $primary
-    color: #fff
-    +border-top-radius
+    background: $filler
+    border: 1px solid $filler - #111
+    border-bottom: 1px solid $primary
+    color: $primary
+    +box-shadow($filler - #111 0 1px 4px inset)
+    +text-shadow(#fff 0 1px 0)
+    
   tbody
-    border: 1px solid $primary
+    border: 1px solid $filler - #111
+    border-top: 1px solid $primary
+    tr:first-child td
+      padding-top: 12px !important
+    tr:last-child td
+      padding-bottom: 12px !important
+      
+  th
+    padding: 10px !important
+    
+  td
+    padding: 3px 15px !important
+    &:nth-child(2)
+      background: $filler !important
+      border-left: 1px solid $filler - #111
+      border-right: 1px solid $primary
+      color: $primary
+      font-weight: bold
+      text-align: right
+    &:last-child
+      +box-shadow($filler - #060606 3px 0 0 inset)
+      padding-left: 0 !important
+      
   th, td
     &:first-child
-      text-align: right !important
       min-width: 30%
+      text-align: right !important
     &:nth-child(2)
       width: 5%
       
@@ -17,16 +43,27 @@
     width: 71%
     +transition(all 2s ease)
   
-      
 .horizontal-bar
   background: $primary
   height: 20px
+  opacity: 0.8
   width: 0
-  +linear-gradient(color-stops($primary + #060606, $primary - #111))
+  +linear-gradient(color-stops($primary + #111, $primary - #111))
   +transition(all 2s ease)
-  
-  &:hover
 
 .horizontal-bar-full
   width: 71%
   +transition(all 2s ease)
+  
+.selector 
+  font-size: 11px
+  select
+    background: #fff
+    border: 1px solid $filler - #333
+    color: $primary
+    font-size: 11px
+    font-weight: bold
+    margin-top: 8px
+    padding: 3px
+    +border-radius(3px)
+    +box-shadow($filler - #222 0 1px 3px)

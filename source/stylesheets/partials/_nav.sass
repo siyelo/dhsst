@@ -124,10 +124,9 @@
   color: #888
   font-size: 11px
   height: 11px
-  padding: 14px
+  padding: 30px 12px 25px
   a
     font-size: 11px
-    font-weight: bold
   &.center
     font-size: 14px
     text-align: center
@@ -136,13 +135,21 @@
   display: inline
   float: left
   margin-right: 15px
+  a
+    font: 18px Droid
+    text-decoration: none
+    +text-shadow(#fff 0 1px 0)
+    &:hover, &:focus
+      +text-shadow($primary - #333 0 1px 0)
+  .subnav-dropdown a
+    //border: 1px solid #eee
+    +border-radius(3px)
     
 .subnav-dropdown
   position: relative
   > a
     background: url("../images/expand.png") no-repeat 95% 57%
     padding: 5px 18px 5px 8px
-    
     
     &:hover, &:focus
       background: url("../images/expand.png") no-repeat 95% 58% $primary !important
@@ -289,3 +296,30 @@
     margin-right: 4px
     padding: 3px 5px
     +border-radius(2px)
+    
+    
+// Tab navigation
+
+#tab-nav
+  background: #eee
+  border-bottom: 1px solid #e6e6e6
+  margin: -15px -15px 15px
+  +linear-gradient(color-stops(#fafafa, #f1f1f1))
+  +pie-clearfix
+  li
+    margin-right: 0
+  a
+    border-right: 1px solid #e6e6e6
+    color: #666
+    display: block
+    padding: 15px 20px
+    text-decoration: none
+    +text-shadow(#fff 0 1px 0)
+    &:hover, &:focus, &.selected
+      background: #fff
+      color: $primary
+      +linear-gradient(color-stops(#fff, #fff))
+
+    &.selected
+      border-bottom: 1px solid #fff
+      margin-bottom: -1px

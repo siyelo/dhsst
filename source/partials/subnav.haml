@@ -1,25 +1,47 @@
 .subnav
+  
   .filter
-    %span.bold Iteration
-    %span.dropdown.dropdown-period.subnav-dropdown
-      %a.selected{"data-period" => "3", "data-type" => "period", :href => "#"}
-        2010
+    /%span.bold Objective
+    %span.dropdown.subnav-dropdown
+      %a.selected{"data-type" => "objective", :href => "#"}
+        Please select an objective
       .hidden.dropdown-list
         %ul
           %li
-            %a{:href => "/dsr/view/1"}
-              %span 2008
+            %span
+              %a{:href => "/dsr/view?objective=2"}
+                Human Resources
           %li
-            %a{:href => "/dsr/view/2"}
-              %span 2009
+            %span
+              %a{:href => "/dsr/view?objective=3"}
+                Geographical Access
           %li
-            %a{:href => "/dsr/view/3"}
-              %span 2010
+            %span
+              %a{:href => "/dsr/view?objective=4"}
+                Facility Identifiers
           %li
-            %a{:href => "/dsr/view/4"}
-              %span 2011
+            %span
+              %a{:href => "/dsr/view?objective=5"}
+                Drugs, Vaccines, and Consumables
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=6"}
+                Institutional Capacity
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=7"}
+                Financial Access
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=8"}
+                Quality Assurance
+          %li
+            %span
+              %a{:href => "/dsr/view?objective=9"}
+                Service Delivery
+                
   .filter
-    %span.bold Location
+    /%span.bold Location
     %span.dropdown.dropdown-organisation.subnav-dropdown
       %a.selected{"data-type" => "organisation", :href => "#"}
         Please select a location
@@ -1513,45 +1535,26 @@
                       %li.foldable
                         %a.dropdown-link.parameter{"data-organisation" => "12761", "data-type" => "organisation", :href => "/dsr/view?organisation=12761"}
                           RUBONA
+                
   .filter
-    %span.bold Objective
-    %span.dropdown.subnav-dropdown
-      %a.selected{"data-type" => "objective", :href => "#"}
-        Please select an objective
+    %span.dropdown.dropdown-period.subnav-dropdown
+      %a.selected{"data-period" => "3", "data-type" => "period", :href => "#"}
+        2010
       .hidden.dropdown-list
         %ul
           %li
-            %span
-              %a{:href => "/dsr/view?objective=2"}
-                Human Resources
+            %a{:href => "/dsr/view/1"}
+              %span 2008
           %li
-            %span
-              %a{:href => "/dsr/view?objective=3"}
-                Geographical Access
+            %a{:href => "/dsr/view/2"}
+              %span 2009
           %li
-            %span
-              %a{:href => "/dsr/view?objective=4"}
-                Facility Identifiers
+            %a{:href => "/dsr/view/3"}
+              %span 2010
           %li
-            %span
-              %a{:href => "/dsr/view?objective=5"}
-                Drugs, Vaccines, and Consumables
-          %li
-            %span
-              %a{:href => "/dsr/view?objective=6"}
-                Institutional Capacity
-          %li
-            %span
-              %a{:href => "/dsr/view?objective=7"}
-                Financial Access
-          %li
-            %span
-              %a{:href => "/dsr/view?objective=8"}
-                Quality Assurance
-          %li
-            %span
-              %a{:href => "/dsr/view?objective=9"}
-                Service Delivery
+            %a{:href => "/dsr/view/4"}
+              %span 2011
+              
   .right
     / ADMIN SECTION
     = succeed "|" do
