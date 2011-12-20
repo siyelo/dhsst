@@ -1,2 +1,57 @@
 .main
-  %p Performance
+  = render "partials/tab-nav"
+  %ul#questions
+    %li.question
+      %h4.section-title
+        %span.question-number 1 
+        Title
+
+      .selector.right
+        %span Compare Vs.
+        %select
+          %option Rwanda
+        
+    %table.horizontal-graph
+      %thead
+        %tr
+          %th Strategic Objective
+          %th Score
+          %th
+        
+      %tbody
+        %tr
+          %td Drugs Vaccines Consumables
+          %td 71%
+          %td
+            .horizontal-bar
+        %tr
+          %td Human Resources
+          %td 56%
+          %td
+            .horizontal-bar{ :style => "width: 56%; " }
+        %tr
+          %td Geographical Acccess
+          %td 91%
+          %td
+            .horizontal-bar{ :style => "width: 91%; " }
+        %tr
+          %td Service Delivery
+          %td 79%
+          %td
+            .horizontal-bar{ :style => "width: 79%; " }
+        %tr
+          %td Institutional Capacity
+          %td 32%
+          %td
+            .horizontal-bar{ :style => "width: 32%; " }
+        %tr
+          %td Quality Assurance
+          %td 4%
+          %td
+            .horizontal-bar{ :style => "width: 4%; " }
+        %tr
+          %td Financial Access
+          %td 14%
+          %td
+            .horizontal-bar{ :style => "width: 14%; " }
+        

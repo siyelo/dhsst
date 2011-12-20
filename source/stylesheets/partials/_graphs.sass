@@ -1,0 +1,32 @@
+.horizontal-graph
+  thead
+    background: $primary
+    border: 1px solid $primary
+    color: #fff
+    +border-top-radius
+  tbody
+    border: 1px solid $primary
+  th, td
+    &:first-child
+      text-align: right !important
+      min-width: 30%
+    &:nth-child(2)
+      width: 5%
+      
+  tr:hover .horizontal-bar
+    width: 71%
+    +transition(all 2s ease)
+  
+      
+.horizontal-bar
+  background: $primary
+  height: 20px
+  width: 0
+  +linear-gradient(color-stops($primary + #060606, $primary - #111))
+  +transition(all 2s ease)
+  
+  &:hover
+
+.horizontal-bar-full
+  width: 71%
+  +transition(all 2s ease)
