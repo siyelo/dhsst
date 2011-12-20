@@ -1,23 +1,19 @@
 .main
   = render "partials/tab-nav"
 
-
-  %p.show-question-help
-    .show-question-help
-      = link_to 'Show tips', '#'
-    .question-help-container
-      .question-help
-        = link_to 'Close tips', '#', :class => 'hide-question-help'
-        (a) Enter the total number of staff members that received training in this subject from July 2009 - June 2000, regarddless of how many days' draining they received.
-        %br
-        (b) Enter the cumulative number of training days spent on that module. To do so, add up all of the days spent by every person who participated in that module.
-
-
+  %p.show-question-help.moved
+    = link_to 'Show tips', '#'
+  .question-help-container
+    .question-help
+      = link_to 'Close tips', '#', :class => 'hide-question-help'
+      (a) Enter the total number of staff members that received training in this subject from July 2009 - June 2000, regarddless of how many days' draining they received.
+      %br
+      (b) Enter the cumulative number of training days spent on that module. To do so, add up all of the days spent by every person who participated in that module.
 
   %ul#questions
     %li.question
       %h4.section-title
-        %span.question-number 1
+        %span.question-default 1
         DISTRICT SUMMARY REPORT (Human Resources for Health x West)
 
       .selector
@@ -28,7 +24,7 @@
     %table.tabular_tree
       %thead
         %tr
-          %th Multiple selected
+          %th Facility
           %th Management training days
           %th Nurse training days
           %th % Nurses A1 Status

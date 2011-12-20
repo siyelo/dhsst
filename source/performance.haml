@@ -1,11 +1,18 @@
 .main
   = render "partials/tab-nav"
   
+  %p.show-question-help.moved
+    = link_to 'Show tips', '#'
+  .question-help-container
+    .question-help
+      = link_to 'Close tips', '#', :class => 'hide-question-help'
+      Some help information for the Performance tab
+    
   %ul#questions.clearfix
     %li.question
       %h4.section-title
-        %span.question-number 1 
-        Title
+        %span.question-default 1 
+        All Strategic Programs
 
       .selector.right
         %span Compare Vs.
