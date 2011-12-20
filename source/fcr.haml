@@ -1,0 +1,111 @@
+= render "partials/tab-nav"
+
+.main
+  %ul#questions
+    %li.question
+      %h4.section-title
+        %span.question-number 1
+        FACILITY COUNT REPORT (Geogrpahical Access x Rwanda)
+
+  .selector
+    %span Report Type:
+    %select
+      %option Access to power
+
+    %table
+      %thead
+        %tr
+          %th Location
+          %th Option 1
+          %th Option 2
+          %th Option 3
+
+      %tbody
+        %tr
+          %td Kigali
+          %td 40%
+          %td 30%
+          %td 30%
+        %tr
+          %td North
+          %td 40%
+          %td 30%
+          %td 30%
+        %tr
+          %td South
+          %td 40%
+          %td 30%
+          %td 30%
+        %tr
+          %td East
+          %td 40%
+          %td 30%
+          %td 30%
+        %tr
+          %td West
+          %td 40%
+          %td 30%
+          %td 30%
+        %tr.total
+          %td RWANDA
+          %td 40%
+          %td 30%
+          %td 30%
+
+  %ul#questions
+    %li.question
+      %h4.section-title
+        %span.question-number 2
+        ACCESS TO POWER
+  %p
+    Facility types: District Hospital, Health Center
+  %table{:style => "width: 90%; float: left"}
+    %tbody
+      %tr.vertical-graph
+        %td
+          %div{:style => "background-color: blue; height: 80%"}
+          %div{:style => "background-color: yellow; height: 30%"}
+          %div{:style => "background-color: green; height: 50%"}
+        %td
+          %div{:style => "background-color: blue; height: 80%"}
+          %div{:style => "background-color: yellow; height: 30%"}
+          %div{:style => "background-color: green; height: 50%"}
+        %td
+          %div{:style => "background-color: blue; height: 80%"}
+          %div{:style => "background-color: yellow; height: 30%"}
+          %div{:style => "background-color: green; height: 50%"}
+        %td
+          %div{:style => "background-color: blue; height: 80%"}
+          %div{:style => "background-color: yellow; height: 30%"}
+          %div{:style => "background-color: green; height: 50%"}
+        %td
+          %div{:style => "background-color: blue; height: 80%"}
+          %div{:style => "background-color: yellow; height: 30%"}
+          %div{:style => "background-color: green; height: 50%"}
+        %td
+          %div{:style => "background-color: blue; height: 80%"}
+          %div{:style => "background-color: yellow; height: 30%"}
+          %div{:style => "background-color: green; height: 50%"}
+      %tr
+        %td
+          Rwanda
+        %td
+          Kigali
+        %td
+          North
+        %td
+          South
+        %td
+          East
+        %td
+          West
+  %ul.chart_legend
+    %li
+      %span{:style => "background-color: blue;"}
+      Option 1
+    %li
+      %span{:style => "background-color: yellow;"}
+      Option 2
+    %li
+      %span{:style => "background-color: green;"}
+      Option 3

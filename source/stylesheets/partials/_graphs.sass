@@ -7,7 +7,7 @@
     color: $primary
     +box-shadow($filler - #111 0 1px 4px inset)
     +text-shadow(#fff 0 1px 0)
-    
+
   tbody
     border: 1px solid $filler - #111
     border-top: 1px solid $primary
@@ -15,10 +15,10 @@
       padding-top: 12px !important
     tr:last-child td
       padding-bottom: 12px !important
-      
+
   th
     padding: 10px !important
-    
+
   td
     padding: 3px 15px !important
     &:nth-child(2)
@@ -31,18 +31,18 @@
     &:last-child
       +box-shadow($filler - #060606 3px 0 0 inset)
       padding-left: 0 !important
-      
+
   th, td
     &:first-child
       min-width: 30%
       text-align: right !important
     &:nth-child(2)
       width: 5%
-      
+
   tr:hover .horizontal-bar
     width: 71%
     +transition(all 2s ease)
-  
+
 .horizontal-bar
   background: $primary
   height: 20px
@@ -54,8 +54,8 @@
 .horizontal-bar-full
   width: 71%
   +transition(all 2s ease)
-  
-.selector 
+
+.selector
   font-size: 11px
   select
     background: #fff
@@ -67,3 +67,25 @@
     padding: 3px
     +border-radius(3px)
     +box-shadow($filler - #222 0 1px 3px)
+
+.vertical-graph
+  border-left: 1px solid black
+  border-bottom: 1px solid black
+  td
+    vertical-align: bottom
+    height: 200px
+    div
+      width: 10px
+      display: inline-block
+      margin-bottom: -7px
+
+.chart_legend
+  float: right
+  li
+    margin: 10px
+    span
+      display: block
+      height: 10px
+      width: 10px
+      float: left
+      margin-right: 5px
