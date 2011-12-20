@@ -1,6 +1,7 @@
-= render "partials/tab-nav"
 
 .main
+  = render "partials/tab-nav"
+  
   %ul#questions
     %li.question
       %h4.section-title
@@ -12,7 +13,7 @@
     %select
       %option Access to power
 
-    %table
+    %table.listing.push-top-10
       %thead
         %tr
           %th Location
