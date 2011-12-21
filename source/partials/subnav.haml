@@ -3,7 +3,7 @@
   .filter
     /%span.bold Objective
     %span.dropdown.subnav-dropdown
-      %a.selected{"data-type" => "objective", :href => "#"}
+      %a.selected{"data-type" => "objective", :href => "#", :class => "program"}
         Please select an objective
       .hidden.dropdown-list
         %ul
@@ -43,7 +43,7 @@
   .filter
     /%span.bold Location
     %span.dropdown.dropdown-organisation.subnav-dropdown
-      %a.selected{"data-type" => "organisation", :href => "#"}
+      %a.selected{"data-type" => "organisation", :href => "#", :class => "location"}
         Please select a location
       .hidden.dropdown-list
         %ul
@@ -1538,7 +1538,7 @@
                 
   .filter
     %span.dropdown.dropdown-period.subnav-dropdown
-      %a.selected{"data-period" => "3", "data-type" => "period", :href => "#"}
+      %a.selected{"data-period" => "3", "data-type" => "period", :href => "#", :class => "time"}
         2010
       .hidden.dropdown-list
         %ul

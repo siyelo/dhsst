@@ -2,10 +2,18 @@
 .main
   = render "partials/tab-nav"
   
+  %p.show-question-help.moved
+    = link_to 'Show tips', '#'
+  .question-help-container
+    .question-help
+      = link_to 'Close tips', '#', :class => 'hide-question-help'
+      Some help information for the Performance tab
+  
   %ul#questions
     %li.question
       %h4.section-title
-        %span.question-number 1
+        %span.question-default
+          = image_tag("icons/star_small.png")
         FACILITY COUNT REPORT (Geogrpahical Access x Rwanda)
 
   .selector
@@ -13,7 +21,7 @@
     %select
       %option Access to power
 
-    %table.listing.push-top-10
+    %table.listing.push-top-10.push-20
       %thead
         %tr
           %th Location
@@ -56,37 +64,40 @@
   %ul#questions
     %li.question
       %h4.section-title
-        %span.question-number 2
+        %span.question-default
+          = image_tag("icons/marker_small.png")
         ACCESS TO POWER
   %p
     Facility types: District Hospital, Health Center
-  %table{:style => "width: 90%; float: left"}
+  %br
+  %table.vertical-graph
     %tbody
-      %tr.vertical-graph
+      %tr
         %td
-          %div{:style => "background-color: blue; height: 80%"}
-          %div{:style => "background-color: yellow; height: 30%"}
-          %div{:style => "background-color: green; height: 50%"}
+          .bar1{:style => "height: 80%"}
+          .bar2{:style => "height: 30%"}
+          .bar3{:style => "height: 50%"}
         %td
-          %div{:style => "background-color: blue; height: 80%"}
-          %div{:style => "background-color: yellow; height: 30%"}
-          %div{:style => "background-color: green; height: 50%"}
+          .bar1{:style => "height: 80%"}
+          .bar2{:style => "height: 30%"}
+          .bar3{:style => "height: 50%"}
         %td
-          %div{:style => "background-color: blue; height: 80%"}
-          %div{:style => "background-color: yellow; height: 30%"}
-          %div{:style => "background-color: green; height: 50%"}
+          .bar1{:style => "height: 80%"}
+          .bar2{:style => "height: 30%"}
+          .bar3{:style => "height: 50%"}
         %td
-          %div{:style => "background-color: blue; height: 80%"}
-          %div{:style => "background-color: yellow; height: 30%"}
-          %div{:style => "background-color: green; height: 50%"}
+          .bar1{:style => "height: 80%"}
+          .bar2{:style => "height: 30%"}
+          .bar3{:style => "height: 50%"}
         %td
-          %div{:style => "background-color: blue; height: 80%"}
-          %div{:style => "background-color: yellow; height: 30%"}
-          %div{:style => "background-color: green; height: 50%"}
+          .bar1{:style => "height: 80%"}
+          .bar2{:style => "height: 30%"}
+          .bar3{:style => "height: 50%"}
         %td
-          %div{:style => "background-color: blue; height: 80%"}
-          %div{:style => "background-color: yellow; height: 30%"}
-          %div{:style => "background-color: green; height: 50%"}
+          .bar1{:style => "height: 80%"}
+          .bar2{:style => "height: 30%"}
+          .bar3{:style => "height: 50%"}
+          
       %tr
         %td
           Rwanda
@@ -100,13 +111,14 @@
           East
         %td
           West
+          
   %ul.chart_legend
     %li
-      %span{:style => "background-color: blue;"}
+      %span.bar1
       Option 1
     %li
-      %span{:style => "background-color: yellow;"}
+      %span.bar2
       Option 2
     %li
-      %span{:style => "background-color: green;"}
+      %span.bar3
       Option 3

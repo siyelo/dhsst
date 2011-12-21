@@ -123,8 +123,8 @@
   //background: url('../images/bg/subnav_bg.png') repeat-x
   color: #888
   font-size: 11px
-  height: 11px
-  padding: 35px 8px 25px
+  padding: 30px 0px
+  +pie-clearfix
   a
     font-size: 11px
   &.center
@@ -132,9 +132,11 @@
     text-align: center
     
 .filter
-  display: inline
+  display: inline-block
   float: left
-  margin-right: 15px
+  margin-right: 10px
+  > span
+    display: block
   a
     font: 18px Droid
     text-decoration: none
@@ -142,23 +144,30 @@
     &:hover, &:focus
       +text-shadow($primary - #333 0 1px 0)
   .subnav-dropdown a
-    border: 1px solid #eee
-    +border-radius(3px)
+    //border: 1px solid $filler
+    //+border-radius(3px)
     
 .subnav-dropdown
   position: relative
   > a
-    background: url("../images/expand.png") no-repeat 95% 57%
-    padding: 5px 24px 5px 12px
-    
+    padding: 12px 18px 10px 40px
+    +border-radius(3px)
+    +box-shadow($filler - #111 1px 1px 3px inset)
     &:hover, &:focus
-      background: url("../images/expand.png") no-repeat 95% 58% $primary !important
+      background-color: $primary !important
       color: #fff
       position: relative
       text-decoration: none
       z-index: 20
       +box-shadow($primary - #222 0 2px 9px 0 inset)
       +border-radius(3px)
+      +transition(all 0.3s)
+    &.program
+      background: url("../images/icons/star.png") no-repeat 13px 50%
+    &.location
+      background: url("../images/icons/marker.png") no-repeat 13px 50%
+    &.time
+      background: url("../images/icons/calendar.png") no-repeat 13px 50%
   
 .dropdown-list
   background: $dropdown
@@ -169,7 +178,7 @@
   opacity: 0.95
   padding: 5px 0 0 0
   position: absolute
-  top: 13px
+  top: 25px
   z-index: 1
   +border-bottom-radius(3px)
   +border-top-right-radius(3px)
@@ -302,14 +311,14 @@
 
 #tab-nav
   background: #eee
-  border-bottom: 1px solid #e6e6e6
+  border-bottom: 1px solid #e3e3e3
   margin: -15px -15px 15px
   +linear-gradient(color-stops(#fafafa, #f1f1f1))
   +pie-clearfix
   li
     margin-right: 0
   a
-    border-right: 1px solid #e6e6e6
+    border-right: 1px solid #e3e3e3
     color: #666
     display: block
     padding: 15px 20px
@@ -319,6 +328,7 @@
       background: #fff
       color: $primary
       +linear-gradient(color-stops(#fff, #fff))
+      +transition(all 5s)
 
     &.selected
       border-bottom: 1px solid #fff
