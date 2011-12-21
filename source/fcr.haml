@@ -1,14 +1,14 @@
 
 .main
   = render "partials/tab-nav"
-  
+
   %p.show-question-help.moved
     = link_to 'Show tips', '#'
   .question-help-container
     .question-help
       = link_to 'Close tips', '#', :class => 'hide-question-help'
       Some help information for the Performance tab
-  
+
   %ul#questions
     %li.question
       %h4.section-title
@@ -74,30 +74,30 @@
     %tbody
       %tr
         %td
-          .bar1{:style => "height: 80%"}
-          .bar2{:style => "height: 30%"}
-          .bar3{:style => "height: 50%"}
+          .js_bar_vertical.tooltip.bar1{:title => "80%", :data => {:percentage => "80"}}
+          .js_bar_vertical.tooltip.bar2{:title => "30%", :data => {:percentage => "30"}}
+          .js_bar_vertical.tooltip.bar3{:title => "50%", :data => {:percentage => "50"}}
         %td
-          .bar1{:style => "height: 80%"}
-          .bar2{:style => "height: 30%"}
-          .bar3{:style => "height: 50%"}
+          .js_bar_vertical.tooltip.bar1{:title => "80%", :data => {:percentage => "80"}}
+          .js_bar_vertical.tooltip.bar2{:title => "30%", :data => {:percentage => "30"}}
+          .js_bar_vertical.tooltip.bar3{:title => "50%", :data => {:percentage => "50"}}
         %td
-          .bar1{:style => "height: 80%"}
-          .bar2{:style => "height: 30%"}
-          .bar3{:style => "height: 50%"}
+          .js_bar_vertical.tooltip.bar1{:title => "80%", :data => {:percentage => "80"}}
+          .js_bar_vertical.tooltip.bar2{:title => "30%", :data => {:percentage => "30"}}
+          .js_bar_vertical.tooltip.bar3{:title => "50%", :data => {:percentage => "50"}}
         %td
-          .bar1{:style => "height: 80%"}
-          .bar2{:style => "height: 30%"}
-          .bar3{:style => "height: 50%"}
+          .js_bar_vertical.tooltip.bar1{:title => "80%", :data => {:percentage => "80"}}
+          .js_bar_vertical.tooltip.bar2{:title => "30%", :data => {:percentage => "30"}}
+          .js_bar_vertical.tooltip.bar3{:title => "50%", :data => {:percentage => "50"}}
         %td
-          .bar1{:style => "height: 80%"}
-          .bar2{:style => "height: 30%"}
-          .bar3{:style => "height: 50%"}
+          .js_bar_vertical.tooltip.bar1{:title => "80%", :data => {:percentage => "80"}}
+          .js_bar_vertical.tooltip.bar2{:title => "30%", :data => {:percentage => "30"}}
+          .js_bar_vertical.tooltip.bar3{:title => "50%", :data => {:percentage => "50"}}
         %td
-          .bar1{:style => "height: 80%"}
-          .bar2{:style => "height: 30%"}
-          .bar3{:style => "height: 50%"}
-          
+          .js_bar_vertical.tooltip.bar1{:title => "80%", :data => {:percentage => "80"}}
+          .js_bar_vertical.tooltip.bar2{:title => "30%", :data => {:percentage => "30"}}
+          .js_bar_vertical.tooltip.bar3{:title => "50%", :data => {:percentage => "50"}}
+
       %tr
         %td
           Rwanda
@@ -111,7 +111,7 @@
           East
         %td
           West
-          
+
   %ul.chart_legend
     %li
       %span.bar1
