@@ -1,6 +1,7 @@
 %ul#tab-nav.horizontal
-  %li= link_to "Performance", "#", :class => "selected"
-  %li= link_to "District Summary", "#"
-  %li= link_to "Costing", "#"
-  %li= link_to "Facility Count", "#"
-  %li= link_to "Map", "#"
+  %li= link_to "Performance", "/performance.html", :class => (request.path_info == 'performance.html' ? 'selected' : nil)
+
+  %li= link_to "District Summary", "/dsr.html", :class => (request.path_info == 'dsr.html' ? 'selected' : nil)
+  %li= link_to "Costing", "/costing.html", :class => (request.path_info == 'costing.html' ? 'selected' : nil)
+  %li= link_to "Facility Count", "/fcr.html", :class => (request.path_info == 'fcr.html' ? 'selected' : nil)
+  %li= link_to "Map", "/map.html", :class => (request.path_info == 'map.html' ? 'selected' : nil)
