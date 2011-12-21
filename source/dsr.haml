@@ -26,110 +26,117 @@
       %thead
         %tr
           %th Facility
-          %th Management training days
-          %th Nurse training days
-          %th % Nurses A1 Status
+          %th{:colspan => 2} Management training days
+          %th{:colspan => 2} Nurse training days
+          %th{:colspan => 2} % Nurses A1 Status
 
       %tbody
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 0px;'}
-              = image_tag("icons/toggle_minus_large.png")
-            West
-          %td Total: <span>63</span> (Avg: <span>21</span>)
-          %td Total: <span>63</span> (Avg: <span>21</span>)
-          %td Total: <span>63</span> (Avg: <span>21</span>)
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 20px;'}
-              = image_tag("icons/toggle_minus_large.png")
-            Karongi
-          %td Total: <span>21</span> (Avg: <span>2.1</span>)
-          %td Total: <span>21</span> (Avg: <span>2.1</span>)
-          %td Total: <span>21</span> (Avg: <span>2.1</span>)
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Kibuye HD
-          %td 1
-          %td 1
-          %td 1
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Kirinda HD
-          %td 5
-          %td 5
-          %td 5
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Mugonero HD
-          %td 6
-          %td 6
-          %td 6
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Biguhu CS
-          %td 4
-          %td 4
-          %td 4
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Birambo CS
-          %td 3
-          %td 3
-          %td 3
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Bisesero CS
-          %td 6
-          %td 6
-          %td 6
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Bubazi CS
-          %td 4
-          %td 4
-          %td 4
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Gatare (TWUMBA) CS
-          %td 1
-          %td 1
-          %td 1
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Gisovu CS
-          %td 4
-          %td 4
-          %td 4
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 40px;'}|
-            Karongi (Gisunzu) Police CS
-          %td 2
-          %td 2
-          %td 2
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 20px;'}
-              = image_tag("icons/toggle_plus_large.png")
-            Ngororero
-          %td Total: <span>21</span> (Avg: <span>2.1</span>)
-          %td Total: <span>21</span> (Avg: <span>2.1</span>)
-          %td Total: <span>21</span> (Avg: <span>2.1</span>)
-        %tr
-          %td
-            %span.tree_sign{:style => 'margin-left: 20px;'}
-              = image_tag("icons/toggle_plus_large.png")
-            Nyabihu
-          %td Total: <span>21</span> (Avg: <span>2.1</span>)
-          %td Total: <span>21</span> (Avg: <span>2.1</span>)
-          %td Total: <span>21</span> (Avg: <span>2.1</span>)
+        %tr.tree_sign_minus
+          %td{:style => 'padding-left: 20px;'} West
+          %td Total: <span>63</span>
+          %td Avg: <span>21</span>
+          %td Total: <span>63</span>
+          %td Avg: <span>21</span>
+          %td Total: <span>63</span>
+          %td Avg: <span>21</span>
+        %tr.sub_tree{:style => "display: table-row"}
+          %td{:colspan => 7}
+            %table
+              %tr.tree_sign_minus
+                %td{:style => 'padding-left: 20px;'} Karongi
+                %td Total: <span>21</span>
+                %td Avg: <span>2.1</span>
+                %td Total: <span>21</span>
+                %td Avg: <span>2.1</span>
+                %td Total: <span>21</span>
+                %td Avg: <span>2.1</span>
+              %tr.sub_tree{:style => "display: table-row"}
+                %td{:colspan => 7}
+                  %table
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Kibuye HD
+                      %td{:colspan => 2} 1
+                      %td{:colspan => 2} 1
+                      %td{:colspan => 2} 1
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Kirinda HD
+                      %td{:colspan => 2} 5
+                      %td{:colspan => 2} 5
+                      %td{:colspan => 2} 5
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Mugonero HD
+                      %td{:colspan => 2} 6
+                      %td{:colspan => 2} 6
+                      %td{:colspan => 2} 6
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Biguhu CS
+                      %td{:colspan => 2} 4
+                      %td{:colspan => 2} 4
+                      %td{:colspan => 2} 4
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Birambo CS
+                      %td{:colspan => 2} 3
+                      %td{:colspan => 2} 3
+                      %td{:colspan => 2} 3
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Bisesero CS
+                      %td{:colspan => 2} 6
+                      %td{:colspan => 2} 6
+                      %td{:colspan => 2} 6
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Bubazi CS
+                      %td{:colspan => 2} 4
+                      %td{:colspan => 2} 4
+                      %td{:colspan => 2} 4
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Gatare (TWUMBA) CS
+                      %td{:colspan => 2} 1
+                      %td{:colspan => 2} 1
+                      %td{:colspan => 2} 1
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Gisovu CS
+                      %td{:colspan => 2} 4
+                      %td{:colspan => 2} 4
+                      %td{:colspan => 2} 4
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Karongi (Gisunzu) Police CS
+                      %td{:colspan => 2} 2
+                      %td{:colspan => 2} 2
+                      %td{:colspan => 2} 2
+              %tr.tree_sign_plus
+                %td{:style => 'padding-left: 20px;'} Ngororero
+                %td Total: <span>21</span>
+                %td Avg: <span>2.1</span>
+                %td Total: <span>21</span>
+                %td Avg: <span>2.1</span>
+                %td Total: <span>21</span>
+                %td Avg: <span>2.1</span>
+              %tr.sub_tree
+                %td{:colspan => 7}
+                  %table
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Lorem
+                      %td{:colspan => 2} 1
+                      %td{:colspan => 2} 1
+                      %td{:colspan => 2} 1
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Ipsum
+                      %td{:colspan => 2} 5
+                      %td{:colspan => 2} 5
+                      %td{:colspan => 2} 5
+              %tr.tree_sign_plus
+                %td{:style => 'padding-left: 20px;'} Nyabihu
+                %td Total: <span>21</span>
+                %td Avg: <span>2.1</span>
+                %td Total: <span>21</span>
+                %td Avg: <span>2.1</span>
+                %td Total: <span>21</span>
+                %td Avg: <span>2.1</span>
+              %tr.sub_tree
+                %td{:colspan => 7}
+                  %table
+                    %tr
+                      %td{:style => 'padding-left: 40px;'} Lorem
+                      %td{:colspan => 2} 1
+                      %td{:colspan => 2} 1
+                      %td{:colspan => 2} 1

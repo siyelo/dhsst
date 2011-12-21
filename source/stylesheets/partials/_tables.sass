@@ -19,10 +19,10 @@
         font-size: 11px
   tr.left th
     text-align: left
-        
+
   a, th, td
     line-height: 1.4
-    
+
   td
     border-top: 1px solid $filler
     color: #444
@@ -31,20 +31,20 @@
     &.header
       color: #888
       font-weight: bold
-      
+
   tbody tr
     &:hover, &:focus
       background: $filler + #060606
-  
+
   td:first-child, th:first-child
     border-left: 1px solid $filler
-    
+
   td:last-child, th:last-child
     border-right: 1px solid $filler
-    
+
   tr:last-child td
     border-bottom: 1px solid $filler
-    
+
   &.login
     margin: 0 auto
     width: 240px
@@ -58,18 +58,22 @@
       border: none
       padding: 0 0 5px
       text-align: center
-      
+
     // fterrier start: added style for a tags
     a
       font-size: 11px
     // fterrier end
-    
-  .tree_sign
-    display: inline-block
-    margin-right: 3px
-    position: relative
-    top: 2px
-      
+
+  .tree_sign_plus
+    cursor: pointer
+    td:first-child
+      background: url('../images/icons/toggle_plus_large.png') no-repeat 5px center
+
+  .tree_sign_minus
+    cursor: pointer
+    td:first-child
+      background: url('../images/icons/toggle_minus_large.png') no-repeat 5px center
+
 .explanation-heading
   background: $filler
   font-size: 11px
@@ -81,10 +85,10 @@
   > td
     border: none
     padding: 0 10px
-    
+
 .explanation-cell table
   margin-bottom: 10px
-  
+
 .add-row, .element-list-add
   background: url('../images/icons/toggle_plus.png') no-repeat 10px center $filler
   border: 1px solid $filler - #222
@@ -107,3 +111,6 @@
     position: relative
     top: 1px
     +box-shadow(#ccc, 0, 1px, 1px)
+
+.sub_tree
+  display: none

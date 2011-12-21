@@ -1,13 +1,3 @@
-$(document).ready(function () {
-  animateCharts();
-
-  $(window).scroll(function () {
-    animateCharts();
-  });
-
-  $('.tooltip').tipsy({gravity: 's', fade: true, live: true, html: true});
-});
-
 var animateCharts = function () {
   var bars = $('.js_bar_horizontal, .js_bar_vertical');
 
@@ -37,3 +27,19 @@ var isScrolledIntoView = function (elem) {
   return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom)
     && (elemBottom <= docViewBottom) &&  (elemTop >= docViewTop) );
 }
+
+$(function () {
+  animateCharts();
+
+  $(window).scroll(function () {
+    animateCharts();
+  });
+
+  $('.tooltip').tipsy({gravity: 's', fade: true, live: true, html: true});
+
+  $('.tree_sign_plus, .tree_sign_minus').live('click', function (e) {
+    var element = $(this);
+    element.toggleClass('tree_sign_plus tree_sign_minus');
+    element.next('tr.sub_tree').toggle();
+  });
+});
