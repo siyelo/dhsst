@@ -64,14 +64,51 @@
       font-size: 11px
     // fterrier end
 
+.nested
+  font-size: 11px
+  
+  thead
+    background: $filler
+    border: 1px solid $filler - #111
+    border-bottom: none
+    color: $primary
+    +box-shadow($filler - #111 0 1px 4px inset)
+    
+  > tbody
+    border: 1px solid $primary
+    
+  td, th
+    padding: 7px
+    text-align: right
+    width: 200px
+    &:first-child
+      text-align: left
+      width: 370px
+      > span
+        display: inline-block
+        padding-left: 20px
+        
+    &.bucket
+      padding: 0
+      
+  .sub_tree .sub_tree tr
+    td
+      border-bottom: 1px solid #eee
+    &:first-child td
+      border-top: 1px solid #eee
+    &:hover, &:focus
+      background: #f9f9f9
+      
   .tree_sign_plus
+    background: #f9f9f9
     cursor: pointer
-    td:first-child
+    td:first-child span
       background: url('../images/icons/toggle_plus_large.png') no-repeat 5px center
 
   .tree_sign_minus
+    background: #f9f9f9
     cursor: pointer
-    td:first-child
+    td:first-child span
       background: url('../images/icons/toggle_minus_large.png') no-repeat 5px center
 
 .explanation-heading
