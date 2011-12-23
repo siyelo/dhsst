@@ -123,7 +123,7 @@
   //background: url('../images/bg/subnav_bg.png') repeat-x
   color: #888
   font-size: 11px
-  padding: 30px 0px
+  padding: 30px 15px
   +pie-clearfix
   a
     font-size: 11px
@@ -138,14 +138,14 @@
   > span
     display: block
   a
-    font: 18px Droid
+    font: 16px Droid
     text-decoration: none
     +text-shadow(#fff 0 1px 0)
     &:hover, &:focus
       +text-shadow($primary - #333 0 1px 0)
-  .subnav-dropdown a
-    //border: 1px solid $filler
-    //+border-radius(3px)
+  &.right
+    float: right
+    margin-right: 0
     
 .subnav-dropdown
   position: relative
@@ -163,11 +163,21 @@
       +border-radius(3px)
       +transition(all 0.3s)
     &.program
-      background: url("../images/icons/star.png") no-repeat 13px 50%
+      background: url("../images/icons/star.png") no-repeat 14px 50% #fcfcfc
+      &:hover, &:focus
+        background: url("../images/icons/star_hover.png") no-repeat 14px 50%
     &.location
-      background: url("../images/icons/marker.png") no-repeat 13px 50%
+      background: url("../images/icons/marker.png") no-repeat 14px 50% #fcfcfc
+      &:hover, &:focus
+        background: url("../images/icons/marker_hover.png") no-repeat 14px 50% #fcfcfc
     &.time
-      background: url("../images/icons/calendar.png") no-repeat 13px 50%
+      background: url("../images/icons/calendar.png") no-repeat 14px 50% #fcfcfc
+      &:hover, &:focus
+        background: url("../images/icons/calendar_hover.png") no-repeat 14px 50% #fcfcfc
+    &.addnew
+      background: url("../images/icons/plus.png") no-repeat 14px 50% #fafdf4
+      &:hover, &:focus
+        background: url("../images/icons/plus_hover.png") no-repeat 14px 50% $yes !important
   
 .dropdown-list
   background: $dropdown
@@ -321,14 +331,14 @@
     border-right: 1px solid #e3e3e3
     color: #666
     display: block
-    padding: 15px 20px
+    padding: 14px 20px
     text-decoration: none
     +text-shadow(#fff 0 1px 0)
     &:hover, &:focus, &.selected
       background: #fff
       color: $primary
       +linear-gradient(color-stops(#fff, #fff))
-      +transition(all 5s)
+      +transition(all .5s)
 
     &.selected
       border-bottom: 1px solid #fff

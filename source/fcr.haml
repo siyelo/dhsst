@@ -5,7 +5,7 @@
   %p.show-question-help.moved
     = link_to 'Show tips', '#'
   .question-help-container
-    .question-help
+    .question-help.push-20
       = link_to 'Close tips', '#', :class => 'hide-question-help'
       Some help information for the Performance tab
 
@@ -67,9 +67,13 @@
         %span.question-default
           = image_tag("icons/marker_small.png")
         ACCESS TO POWER
-  %p
-    Facility types: District Hospital, Health Center
+  %p Facility types: District Hospital, Health Center
   %br
+  %ul.chart
+    %li 100
+    %li 50
+    %li 0
+    
   %table.vertical-graph
     %tbody
       %tr

@@ -4,7 +4,7 @@
   %p.show-question-help.moved
     = link_to 'Show tips', '#'
   .question-help-container
-    .question-help
+    .question-help.push-20
       = link_to 'Close tips', '#', :class => 'hide-question-help'
       Some help information for the Performance tab
 
@@ -18,8 +18,8 @@
       .selector.right
         %span Compare Vs.
         %select
-          %option Rwanda
-
+          %option Please select
+          
       .horizontal-graph-wrap
         %table.horizontal-graph
           %thead
@@ -30,43 +30,44 @@
 
           %tbody
             %tr
-              %td Drugs Vaccines Consumables
+              %td= link_to "Drugs Vaccines Consumables"
               %td 71%
               %td
                 .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
             %tr
-              %td Human Resources
+              %td= link_to "Human Resources"
               %td 56%
               %td
                 .js_bar_horizontal.tooltip.horizontal-bar{:title => "56%", :data => {:percentage => "56"}}
             %tr
-              %td Geographical Acccess
+              %td= link_to "Geographical Acccess"
               %td 91%
               %td
                 .js_bar_horizontal.tooltip.horizontal-bar{:title => "91%", :data => {:percentage => "91"}}
             %tr
-              %td Service Delivery
+              %td= link_to "Service Delivery"
               %td 79%
               %td
                 .js_bar_horizontal.tooltip.horizontal-bar{:title => "79%", :data => {:percentage => "79"}}
             %tr
-              %td Institutional Capacity
+              %td= link_to "Institutional Capacity"
               %td 32%
               %td
                 .js_bar_horizontal.tooltip.horizontal-bar{:title => "32%", :data => {:percentage => "32"}}
             %tr
-              %td Quality Assurance
+              %td= link_to "Quality Assurance"
               %td 4%
               %td
                 .js_bar_horizontal.tooltip.horizontal-bar{:title => "4%", :data => {:percentage => "4"}}
             %tr
-              %td Financial Access
+              %td= link_to "Financial Access"
               %td 14%
               %td
                 .js_bar_horizontal.tooltip.horizontal-bar{:title => "14%", :data => {:percentage => "14"}}
 
         .horizontal-graph-average
-          .horizontal-graph-marker{:style => "margin-left: 63%"}
+          .horizontal-graph-tip.tooltip{:style => "width: 63%;", :title => "74%", :data => {:percentage => "74"}} ?
+          .horizontal-graph-marker
 
     %li.question.push-10
       %h4.section-title
@@ -77,49 +78,53 @@
       .selector.right
         %span Compare Vs.
         %select
-          %option Rwanda
+          %option Please select
+          
+      .horizontal-graph-wrap
+        %table.horizontal-graph
+          %thead
+            %tr
+              %th Strategic Objective
+              %th Score
+              %th
 
-      %table.horizontal-graph
-        %thead
-          %tr
-            %th Strategic Objective
-            %th Score
-            %th
-
-        %tbody
-          %tr
-            %td Drugs Vaccines Consumables
-            %td 71%
-            %td
-              .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
-          %tr
-            %td Human Resources
-            %td 56%
-            %td
-              .js_bar_horizontal.tooltip.horizontal-bar{:title => "56%", :data => {:percentage => "56"}}
-          %tr
-            %td Geographical Acccess
-            %td 91%
-            %td
-              .js_bar_horizontal.tooltip.horizontal-bar{:title => "91%", :data => {:percentage => "91"}}
-          %tr
-            %td Service Delivery
-            %td 79%
-            %td
-              .js_bar_horizontal.tooltip.horizontal-bar{:title => "79%", :data => {:percentage => "79"}}
-          %tr
-            %td Institutional Capacity
-            %td 32%
-            %td
-              .js_bar_horizontal.tooltip.horizontal-bar{:title => "32%", :data => {:percentage => "32"}}
-          %tr
-            %td Quality Assurance
-            %td 4%
-            %td
-              .js_bar_horizontal.tooltip.horizontal-bar{:title => "4%", :data => {:percentage => "4"}}
-          %tr
-            %td Financial Access
-            %td 14%
-            %td
-              .js_bar_horizontal.tooltip.horizontal-bar{:title => "14%", :data => {:percentage => "14"}}
-
+          %tbody
+            %tr
+              %td= link_to "Drugs Vaccines Consumables"
+              %td 71%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+            %tr
+              %td= link_to "Human Resources"
+              %td 56%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "56%", :data => {:percentage => "56"}}
+            %tr
+              %td= link_to "Geographical Acccess"
+              %td 91%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "91%", :data => {:percentage => "91"}}
+            %tr
+              %td= link_to "Service Delivery"
+              %td 79%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "79%", :data => {:percentage => "79"}}
+            %tr
+              %td= link_to "Institutional Capacity"
+              %td 32%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "32%", :data => {:percentage => "32"}}
+            %tr
+              %td= link_to "Quality Assurance"
+              %td 4%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "4%", :data => {:percentage => "4"}}
+            %tr
+              %td= link_to "Financial Access"
+              %td 14%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "14%", :data => {:percentage => "14"}}
+                
+        .horizontal-graph-average
+          .horizontal-graph-tip.tooltip{:style => "width: 74%;", :title => "74%", :data => {:percentage => "74"}} ?
+          .horizontal-graph-marker

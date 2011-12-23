@@ -1555,14 +1555,30 @@
             %a{:href => "/dsr/view/4"}
               %span 2011
               
-  .right
-    / ADMIN SECTION
-    = succeed "|" do
-      %span
-        %a{:href => "/dsrObjective/create?targetURI=%2Fdsr%2Fview"} Add Objective
-    = succeed "|" do
-      %span
-        %a{:href => "/dsrTarget/create?targetURI=%2Fdsr%2Fview"} Add Target
-    %span
-      %a{:href => "/dsrTargetCategory/create?targetURI=%2Fdsr%2Fview"} Add Target Category
-    / ADMIN SECTION END
+  / .right
+  /   / ADMIN SECTION
+  /   = succeed "|" do
+  /     %span
+  /       %a{:href => "/dsrObjective/create?targetURI=%2Fdsr%2Fview"} Add Objective
+  /   = succeed "|" do
+  /     %span
+  /       %a{:href => "/dsrTarget/create?targetURI=%2Fdsr%2Fview"} Add Target
+  /   %span
+  /     %a{:href => "/dsrTargetCategory/create?targetURI=%2Fdsr%2Fview"} Add Target Category
+  /   / ADMIN SECTION END
+
+  .filter.right
+    %span.dropdown.subnav-dropdown
+      %a.selected{"data-type" => "objective", :href => "#", :class => "addnew"}
+        Add New
+      .hidden.dropdown-list
+        %ul
+          %li
+            %span
+              %a{:href => "/dsrObjective/create?targetURI=%2Fdsr%2Fview"} Add Objective
+          %li
+            %span
+              %a{:href => "/dsrTarget/create?targetURI=%2Fdsr%2Fview"} Add Target
+          %li
+            %span
+              %a{:href => "/dsrTargetCategory/create?targetURI=%2Fdsr%2Fview"} Add Target Category
