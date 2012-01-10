@@ -5,12 +5,12 @@
   position: absolute
   top: 0
   +pie-clearfix
-  
+
   li
     display: inline
     float: left
     margin-left: 3px
-    
+
   a
     background: $filler
     color: $primary
@@ -23,7 +23,7 @@
     &:hover, &:focus, &.no-link
       background: $primary
       color: #fff
-    
+
 
 // Main navigation
 #navigation
@@ -45,7 +45,7 @@
       border-right: 1px solid $primary_dark
     &:hover .submenu
       display: block
-      
+
   a
     border-left: 1px solid $primary_dark
     border-right: 1px solid $primary_light
@@ -61,7 +61,7 @@
       +box-shadow($primary - #222, 0, -3px, 8px, 6px, inset)
     &:active
       +box-shadow($primary - #292929, 0, -2px, 10px, 10px, inset)
-    
+
   .submenu
     background: $primary
     border: 1px solid $primary_dark
@@ -82,20 +82,20 @@
       white-space: nowrap
       &:hover, &:focus
         background: $primary_dark
-        
-        
+
+
 // Logout navigation
 #logout
   position: absolute
   right: 0
   top: 100px
   z-index: 60
-  
+
   li
     display: inline
     float: left
     margin-left: 7px
-    
+
   a
     background: $primary_dark
     color: $filler
@@ -130,7 +130,7 @@
   &.center
     font-size: 14px
     text-align: center
-    
+
 .filter
   display: inline-block
   float: left
@@ -146,7 +146,11 @@
   &.right
     float: right
     margin-right: 0
-    
+
+.check_filter
+  label, input
+    cursor: pointer
+
 .subnav-dropdown
   position: relative
   > a
@@ -174,6 +178,10 @@
       background: url("../images/icons/calendar.png") no-repeat 14px 50% #fcfcfc
       &:hover, &:focus
         background: url("../images/icons/calendar_hover.png") no-repeat 14px 50% #fcfcfc
+    &.facility
+      background: url("../images/icons/facility.png") no-repeat 14px 50% #fcfcfc
+      &:hover, &:focus
+        background: url("../images/icons/facility_hover.png") no-repeat 14px 50% #fcfcfc
     &.addnew
       background: url("../images/icons/plus.png") no-repeat 14px 50% #fafdf4
       color: $yes
@@ -182,7 +190,7 @@
         color: #fff
         +box-shadow($yes - #222 0 2px 9px 0 inset)
         +text-shadow($yes - #222 0 1px 0)
-  
+
 .dropdown-list
   background: $dropdown
   border: 1px solid $dropdown - #222
@@ -197,7 +205,7 @@
   +border-bottom-radius(3px)
   +border-top-right-radius(3px)
   +box-shadow(#ccc 2px 2px 3px, $dropdown - #111 0 0 8px 3px inset)
-  
+
   li
     border-bottom: 1px dotted $dropdown - #191919
     display: block
@@ -210,7 +218,7 @@
         color: $primary
     &:last-child
       border: none
-        
+
     a
       color: $primary
       font-size: 10px
@@ -220,7 +228,7 @@
       &:hover
         color: $primary - #333
         +text-shadow(#fff, 0, 1px, 0)
-        
+
       &.foldable-toggle
         border: none
         cursor: pointer
@@ -233,18 +241,18 @@
         background: url('../images/icons/toggle_plus.png') no-repeat left center
         &.toggled
           background: url('../images/icons/toggle_minus.png') no-repeat left center
-          
+
       &.dropdown-link
         background: none
         &:hover
           color: $primary - #444
           +text-shadow(#fff, 0, 1px, 0)
-          
+
       &.opened
         background: $dropdown
         color: $primary - #444
         +text-shadow(#fff, 0, 1px, 0)
-        
+
   // slister start: added class to survey tree menu objectives
   .survey-objective
     border-top: 1px dotted $dropdown - #191919
@@ -252,13 +260,13 @@
     margin-left: 5px
     +pie-clearfix
   // slister end
-  
+
   .survey-section
     border-top: 1px dotted $dropdown - #191919
     margin-top: 5px
     margin-left: 5px
     +pie-clearfix
-    
+
     a
       color: $primary
       padding-right: 10px
@@ -267,17 +275,17 @@
         background: $dropdown
         color: $primary - #444
         +text-shadow(#fff, 0, 1px, 0)
-      
+
     li
       &:focus, &:hover
         a
           color: $primary - #666
-          
+
 .organisation-fold
   border-top: 1px solid $dropdown - #191919
   margin-top: 5px
   padding-top: 5px
-  
+
 .foldable
   min-width: 75px
   a.foldable-toggle
@@ -291,13 +299,13 @@
     background-image: url('../images/icons/toggle_plus.png')
     &.toggled
       background-image: url('../images/icons/toggle_minus.png')
-  
+
   &.opened > span, &.opened > a
     font-weight: bold
-    
+
 .organisation-fold
   padding: 0 5px
-  
+
 .paginateButtons
   .step
     background: $filler
@@ -319,8 +327,8 @@
     margin-right: 4px
     padding: 3px 5px
     +border-radius(2px)
-    
-    
+
+
 // Tab navigation
 
 #tab-nav

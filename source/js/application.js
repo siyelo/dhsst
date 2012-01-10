@@ -42,4 +42,19 @@ $(function () {
     element.toggleClass('tree_sign_plus tree_sign_minus');
     element.next('tr.sub_tree').toggle();
   });
+
+  // NOTE: this event is separate from input event
+  // because label click triggers input click event
+  $('.check_filter label').click(function (e) {
+    e.stopPropagation();
+  });
+
+  $('.check_filter input').click(function (e) {
+    e.stopPropagation();
+
+    // TODO: add here Ajax filter request
+    //
+    // alert($(this).prop('checked'))
+    // alert($(this).prop('id'))
+  })
 });

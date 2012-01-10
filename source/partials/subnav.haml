@@ -1,5 +1,5 @@
 .subnav
-  
+
   .filter
     /%span.bold Objective
     %span.dropdown.subnav-dropdown
@@ -39,7 +39,7 @@
             %span
               %a{:href => "/dsr/view?objective=9"}
                 Service Delivery
-                
+
   .filter
     /%span.bold Location
     %span.dropdown.dropdown-organisation.subnav-dropdown
@@ -1535,7 +1535,7 @@
                       %li.foldable
                         %a.dropdown-link.parameter{"data-organisation" => "12761", "data-type" => "organisation", :href => "/dsr/view?organisation=12761"}
                           RUBONA
-                
+
   .filter
     %span.dropdown.dropdown-period.subnav-dropdown
       %a.selected{"data-period" => "3", "data-type" => "period", :href => "#", :class => "time"}
@@ -1554,7 +1554,23 @@
           %li
             %a{:href => "/dsr/view/4"}
               %span 2011
-              
+
+  .filter
+    %span.dropdown.dropdown-period.subnav-dropdown
+      %a.selected{"data-period" => "3", "data-type" => "period", :href => "#", :class => "facility"}
+        Multiselect
+      .hidden.dropdown-list
+        %ul
+          %li.check_filter
+            %input{:type => "checkbox", :id => "select1", :value => "select1"}
+            %label{:for => "select1"} Select 1
+          %li.check_filter
+            %input{:type => "checkbox", :id => "select2", :value => "select2"}
+            %label{:for => "select2"} Select 2
+          %li.check_filter
+            %input{:type => "checkbox", :id => "select3", :value => "select3"}
+            %label{:for => "select3"} Select 3
+
   / .right
   /   / ADMIN SECTION
   /   = succeed "|" do
