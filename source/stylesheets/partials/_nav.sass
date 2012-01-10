@@ -176,8 +176,12 @@
         background: url("../images/icons/calendar_hover.png") no-repeat 14px 50% #fcfcfc
     &.addnew
       background: url("../images/icons/plus.png") no-repeat 14px 50% #fafdf4
+      color: $yes
       &:hover, &:focus
         background: url("../images/icons/plus_hover.png") no-repeat 14px 50% $yes !important
+        color: #fff
+        +box-shadow($yes - #222 0 2px 9px 0 inset)
+        +text-shadow($yes - #222 0 1px 0)
   
 .dropdown-list
   background: $dropdown
