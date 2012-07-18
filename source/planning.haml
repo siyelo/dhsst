@@ -1,11 +1,11 @@
 !!!
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
-    %meta{:content => "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org", :name => "generator"}
+    %meta{:content => "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org", :name => "generator"}/
     %title District Summary Reports
-    %link{:href => "http://static.districthealth.moh.gov.rw/TOkNu9LDencLzreU6u7DZPxhBGtzxvlYwXguYj4EPRe.ico", :rel => "shortcut icon", :type => "image/x-icon"}
-    %meta{:content => "text/html; charset=us-ascii", "http-equiv" => "Content-Type"}
-    %meta{:content => "main", :name => "layout"}
+    %link{:href => "http://static.districthealth.moh.gov.rw/TOkNu9LDencLzreU6u7DZPxhBGtzxvlYwXguYj4EPRe.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %meta{:content => "text/html; charset=us-ascii", "http-equiv" => "Content-Type"}/
+    %meta{:content => "main", :name => "layout"}/
     / for admin forms
     -# %script{:src => "http://static.districthealth.moh.gov.rw/IKfETRJERwBRdVMGxGDGgTIvzB2B464w7472lQKpd3b.js", :type => "text/javascript"}
 
@@ -20,7 +20,7 @@
     %script{:src => "js/jquery/tipsy/src/javascripts/jquery.tipsy.js", :type => "text/javascript"}
   %body
     #spinner.spinner{:style => "display: none;"}
-      %img{:alt => "Loading...", :src => "/kevin/static/RUqKjjg0blqYq46cT6pZl3avB2GM1AWLPs1pE4vbKUr.gif"}
+      %img{:alt => "Loading...", :src => "/kevin/static/RUqKjjg0blqYq46cT6pZl3avB2GM1AWLPs1pE4vbKUr.gif"}/
     #header
       .wrapper
         %h1#logo
@@ -39,7 +39,7 @@
             %a.no-link{:href => "/kevin/auth/signOut"} Logout
         %h2
           %span.right
-            %img{:alt => "Rwanda coat of arms", :src => "/kevin/static/LK6UbUK33KUP73Ws3xeZlquQqCkj1YHlG73Hz5EPXWo.png", :width => "33"}
+            %img{:alt => "Rwanda coat of arms", :src => "/kevin/static/LK6UbUK33KUP73Ws3xeZlquQqCkj1YHlG73Hz5EPXWo.png", :width => "33"}/
           %span Rwanda Ministry Of Health
           District Health Systems Strenghtening Tool
         %ul#logout
@@ -47,12 +47,13 @@
             %a.redmine.follow{:href => "http://districthealth.moh.gov.rw/redmine", :target => "_blank"} Report a bug
           %li
             %a.redmine.follow{:href => "/kevin/helpdesk"} Helpdesk 114
-
+      .clear
+    / <h1>Welcome to Kevin</h1>
     #navigation
       .wrapper
         %ul#main-menu.menu
           %li
-            %a{:href => "planning"} Planning
+            %a{:href => "/kevin/planning/workflow"} Planning
           %li
             %a{:href => "/kevin/editSurvey/view"} Survey
           %li
@@ -71,6 +72,7 @@
           %li
             %a{:href => "#", :onclick => "return false;"} Administration
             %ul.submenu
+              / <li><a href="/kevin/constant/list">Constants</a></li>
               %li
                 %a{:href => "/kevin/rawDataElement/list"} Raw data Element
               %li

@@ -1,4 +1,235 @@
 .main
   = render "partials/tab-nav"
 
-  %p Map
+  %p.show-question-help.moved
+    = link_to 'Show tips', '#'
+  .question-help-container
+    .question-help.push-20
+      = link_to 'Close tips', '#', :class => 'hide-question-help'
+      Some help information for the Performance tab
+
+  %ul#questions.clearfix
+    %li.question.push-20
+      %h4.section-title
+        %span.question-default
+          = image_tag("icons/star_small.png")
+        Rwanda
+      // New code
+      = link_to "Show Tree View", "#", :class => "right switch"
+      // End new code
+      .selector.right
+        %span Compare Vs.
+        %select
+          %option Please select
+      
+      
+      // New code
+      .map-wrap
+        %iframe{:frameborder => "0", :height => "400", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/?ie=UTF8&t=m&ll=-1.955187,30.355225&spn=2.195852,5.31189&z=8&output=embed", :width => "968"}
+      .nav-table-wrap
+        %p.category Locations
+        %table.nav-table.graph
+          // End new code
+
+          %tbody
+            %tr.parent
+              %td= link_to "Rwanda"
+              %td 77%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+                .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
+            %tr.program
+              %td{:colspan=>"100"}
+                %div
+                  %p.category Strategic Programs
+                  %table
+                    %tbody
+                      %tr
+                        %td= link_to "Drugs Vaccines Consumables"
+                        %td 71%
+                        %td
+                          .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+                          .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
+                      
+                      %tr
+                        %td= link_to "Human Resources"
+                        %td 56%
+                        %td
+                          .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+                          .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
+                      
+                      %tr
+                        %td= link_to "Geographical Acccess"
+                        %td 91%
+                        %td
+                          .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+                          .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
+                      
+                      %tr
+                        %td= link_to "Service Delivery"
+                        %td 79%
+                        %td
+                          .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+                          .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
+                      
+                      %tr
+                        %td= link_to "Institutional Capacity"
+                        %td 32%
+                        %td
+                          .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+                          .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
+                      
+                      %tr
+                        %td= link_to "Quality Assurance"
+                        %td 4%
+                        %td
+                          .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+                          .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
+                      
+                      %tr
+                        %td= link_to "Financial Access"
+                        %td 55%
+                        %td
+                          .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+                          .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
+
+            %tr
+              %td= link_to "Kigali City"
+              %td 71%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
+                .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
+            %tr
+              %td= link_to "South"
+              %td 56%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "56%", :data => {:percentage => "56"}}
+                .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 93%", :data => {:percentage => "93"}}
+            %tr
+              %td= link_to "West"
+              %td 91%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "91%", :data => {:percentage => "91"}}
+                .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 66%", :data => {:percentage => "66"}}
+            %tr
+              %td= link_to "North"
+              %td 79%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "79%", :data => {:percentage => "79"}}
+                .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 58%", :data => {:percentage => "58"}}
+            %tr
+              %td= link_to "East"
+              %td 32%
+              %td
+                .js_bar_horizontal.tooltip.horizontal-bar{:title => "32%", :data => {:percentage => "32"}}
+                .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 63%", :data => {:percentage => "63"}}
+
+    %li.question.push-10
+      %h4.section-title
+        %span.question-default
+          = image_tag("icons/marker_small.png")
+        Rwanda
+      
+      // New code
+      = link_to "Show Tree View", "#", :class => "right switch"
+      // End new code
+      
+      .selector.right
+        %span Compare Vs.
+        %select
+          %option Please select
+      
+      
+      // New code
+      .map-wrap
+        %iframe{:frameborder => "0", :height => "400", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/?ie=UTF8&t=m&ll=-1.955187,30.355225&spn=2.195852,5.31189&z=8&output=embed", :width => "968"}
+      .nav-table-wrap
+        %p.category Locations
+        %table.nav-table.number
+
+          %tbody
+            %tr.parent
+              %td= link_to "Rwanda"
+              %td 77%
+              %td 000
+              %td 000
+              %td 000
+            %tr.program
+              %td{:colspan=>"100"}
+                %div
+                  %p.category Strategic Programs
+                  %table
+                    %tbody
+                      %tr
+                        %td= link_to "Drugs Vaccines Consumables"
+                        %td 71%
+                        %td 000
+                        %td 000
+                        %td 000
+                      %tr
+                        %td= link_to "Human Resources"
+                        %td 56%
+                        %td 000
+                        %td 000
+                        %td 000
+                      %tr
+                        %td= link_to "Geographical Acccess"
+                        %td 91%
+                        %td 000
+                        %td 000
+                        %td 000
+                      %tr
+                        %td= link_to "Service Delivery"
+                        %td 79%
+                        %td 000
+                        %td 000
+                        %td 000
+                      %tr
+                        %td= link_to "Institutional Capacity"
+                        %td 32%
+                        %td 000
+                        %td 000
+                        %td 000
+                      %tr
+                        %td= link_to "Quality Assurance"
+                        %td 4%
+                        %td 000
+                        %td 000
+                        %td 000
+                      %tr
+                        %td= link_to "Financial Access"
+                        %td 55%
+                        %td 000
+                        %td 000
+                        %td 000
+            %tr
+              %td= link_to "Kigali City"
+              %td 71%
+              %td 000
+              %td 000
+              %td 000
+            %tr
+              %td= link_to "South"
+              %td 56%
+              %td 000
+              %td 000
+              %td 000
+            %tr
+              %td= link_to "West"
+              %td 91%
+              %td 000
+              %td 000
+              %td 000
+            %tr
+              %td= link_to "North"
+              %td 79%
+              %td 000
+              %td 000
+              %td 000
+            %tr
+              %td= link_to "East"
+              %td 32%
+              %td 000
+              %td 000
+              %td 000
+      // End new code

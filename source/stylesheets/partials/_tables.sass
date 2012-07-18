@@ -1,3 +1,6 @@
+.table-wrap
+  overflow-x: auto
+
 .listing
   clear: both
   color: #444
@@ -46,12 +49,17 @@
     border-bottom: 1px solid $filler
 
   &.login
+    border: 1px solid #ddd
     margin: 0 auto
     width: 240px
+    +box-shadow(#eee 0 0 5px)
+    +border-radius(3px)
+    tbody
+      border: none
     tr:first-child td
       padding-top: 15px
     tr:last-child td
-      border-top: 1px dashed $filler - #111
+      border: none
       padding-top: 10px
       padding-bottom: 20px
     td
@@ -119,12 +127,17 @@
   padding: 7px 13px
 
 .explanation-row
-  > td
-    border: none
-    padding: 0 10px
-
+  border: none
+  //display: none
+  //padding: 0 10px !important
+.explanation-cell
+  padding: 7px 0
 .explanation-cell table
   margin-bottom: 10px
+  
+.shorten
+  max-width: 100px
+  overflow: hidden
 
 .add-row, .element-list-add
   background: url('../images/icons/toggle_plus.png') no-repeat 10px center $filler
