@@ -124,7 +124,7 @@
                 .js_bar_horizontal.tooltip.horizontal-bar{:title => "32%", :data => {:percentage => "32"}}
                 .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 63%", :data => {:percentage => "63"}}
 
-    %li.question.push-10
+    %li.question.push-20
       %h4.section-title
         %span.question-default
           = image_tag("icons/marker_small.png")
@@ -232,4 +232,69 @@
               %td 000
               %td 000
               %td 000
+      // End new code
+
+
+    %li.question.push-10
+      %h4.section-title
+        %span.question-default
+          = image_tag("icons/marker_small.png")
+        Rwanda
+      
+      // New code
+      = link_to "Show Tree View", "#", :class => "right switch"
+      // End new code
+      
+      .selector.right
+        %span Compare Vs.
+        %select
+          %option Please select
+      
+      
+      // New code
+      .map-wrap
+        %p.nodata Information is available only on district level.
+        %iframe{:frameborder => "0", :height => "400", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/?ie=UTF8&t=m&ll=-1.955187,30.355225&spn=2.195852,5.31189&z=8&output=embed", :width => "968"}
+      .nav-table-wrap
+        %p.category Locations
+        %p.nodata Information is available only on district level.
+        %table.nav-table.number
+
+          %tbody
+            %tr.parent
+              %td= link_to "Rwanda"
+              %td
+              %td
+              %td
+              %td
+            %tr
+              %td= link_to "Kigali City"
+              %td
+              %td
+              %td
+              %td
+            %tr
+              %td= link_to "South"
+              %td
+              %td
+              %td
+              %td
+            %tr
+              %td= link_to "West"
+              %td
+              %td
+              %td
+              %td
+            %tr
+              %td= link_to "North"
+              %td
+              %td
+              %td
+              %td
+            %tr
+              %td= link_to "East"
+              %td
+              %td
+              %td
+              %td
       // End new code
