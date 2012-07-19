@@ -26,6 +26,7 @@
   tbody
     border: 1px solid $filler - #111
     border-top: 1px solid $primary
+    border-right: none
     tr:nth-child(2) td
       padding-top: 12px
     tr:last-child td
@@ -86,6 +87,11 @@
         width: 200px
       &:nth-child(n+3)
         text-align: right
+      &:last-child
+        border-right: 1px solid $filler - #111
+    .program tbody
+      td:last-child
+        border-right: none
       
   &.graph
     td, th
@@ -93,14 +99,16 @@
         width: 199px
       &:last-child
         +box-shadow($filler - #060606 3px 0 0 inset)
+        border-right: 1px solid $filler - #111
         padding-left: 0 !important
-        width: 605px
+        width: 604px
     .program tbody
       tr:first-child
         td
           padding-top: 15px
       td:last-child
         width: 604px
+        border-right: none
       td
         padding-top: 3px
         
