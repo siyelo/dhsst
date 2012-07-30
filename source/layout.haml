@@ -16,6 +16,7 @@
     %script{:src => "js/dropdown_init.js", :type => "text/javascript"}
     %script{:src => "js/foldable_init.js", :type => "text/javascript"}
     %script{:src => "js/questionhelp_init.js", :type => "text/javascript"}
+    %script{:src => "js/navtable_init.js", :type => "text/javascript"}
     %script{:src => "js/application.js", :type => "text/javascript"}
     %script{:src => "js/jquery/tipsy/src/javascripts/jquery.tipsy.js", :type => "text/javascript"}
   %body
@@ -115,13 +116,13 @@
       			$('ul', this).addClass('open');
       			$('ul', this).show();
       		}
-	 
-      	}, 
+
+      	},
       	function () {
       		var self = this;
       		//hide its submenu
       		$('ul', this).slideUp(10, function(){
       			$('ul', self).removeClass('open');
-      		});	
+      		});
       	}
       );

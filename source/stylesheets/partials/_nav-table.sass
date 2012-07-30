@@ -1,6 +1,6 @@
 .nav-table-wrap
   position: relative
-  
+
   .category
     bottom: 10px
     color: rgba(0, 0, 0, 0.25)
@@ -11,7 +11,7 @@
     +rotate(-90deg)
     +text-shadow(#fff 0 1px 1px)
     +transform-origin(bottom, left)
-  
+
 .nav-table
   font-size: 11px
   width: 970px
@@ -44,7 +44,7 @@
       color: $primary
       font-weight: bold
       text-align: right
-    
+
     a
       font-size: 11px
 
@@ -53,7 +53,7 @@
       text-align: right
     &:nth-child(2)
       width: 25px
-        
+
   tr.parent
     td, th
       background: $filler
@@ -62,7 +62,14 @@
     td, th, a
       font-size: 14px
       font-weight: bold
-      
+    a.middle
+      display: block
+      margin-top: 5px
+    a.show_programs
+      font-size: 11px
+      font-weight: normal
+      margin: 0
+
   tr.program
     > td
       border: none
@@ -79,7 +86,7 @@
         background: $filler2
         &:nth-child(2)
           width: 28px
-    
+
   &.number
     td, th
       padding: 7px 15px
@@ -92,7 +99,7 @@
     .program tbody
       td:last-child
         border-right: none
-      
+
   &.graph
     td, th
       &:first-child
@@ -111,13 +118,13 @@
         border-right: none
       td
         padding-top: 3px
-        
+
 .map-wrap
   border: 1px solid $filler
   margin-bottom: 1px
   position: relative
   width: 968px
-  
+
 .switch
   background: #fff
   border: 1px solid $primary + #222
@@ -133,7 +140,7 @@
   &:hover, &:focus
     border: 1px solid $primary
     opacity: 1
-    
+
 .nodata
   background: $filler2
   border: 1px solid #888

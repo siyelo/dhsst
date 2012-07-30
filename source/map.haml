@@ -21,8 +21,8 @@
         %span Compare Vs.
         %select
           %option Please select
-      
-      
+
+
       // New code
       .map-wrap
         %iframe{:frameborder => "0", :height => "400", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/?ie=UTF8&t=m&ll=-1.955187,30.355225&spn=2.195852,5.31189&z=8&output=embed", :width => "968"}
@@ -33,12 +33,14 @@
 
           %tbody
             %tr.parent
-              %td= link_to "Rwanda"
+              %td
+                = link_to "Show Programs", :class => "show_programs switch left"
+                = link_to "Rwanda", :class => "middle"
               %td 77%
               %td
                 .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
                 .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
-            %tr.program
+            %tr.program.hidden
               %td{:colspan=>"100"}
                 %div
                   %p.category Strategic Programs
@@ -50,42 +52,42 @@
                         %td
                           .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
                           .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
-                      
+
                       %tr
                         %td= link_to "Human Resources"
                         %td 56%
                         %td
                           .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
                           .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
-                      
+
                       %tr
                         %td= link_to "Geographical Acccess"
                         %td 91%
                         %td
                           .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
                           .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
-                      
+
                       %tr
                         %td= link_to "Service Delivery"
                         %td 79%
                         %td
                           .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
                           .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
-                      
+
                       %tr
                         %td= link_to "Institutional Capacity"
                         %td 32%
                         %td
                           .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
                           .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
-                      
+
                       %tr
                         %td= link_to "Quality Assurance"
                         %td 4%
                         %td
                           .js_bar_horizontal.tooltip.horizontal-bar{:title => "71%", :data => {:percentage => "71"}}
                           .js_bar_horizontal.tooltip.horizontal-bar-avg{:title => "avg 45%", :data => {:percentage => "45"}}
-                      
+
                       %tr
                         %td= link_to "Financial Access"
                         %td 55%
@@ -129,17 +131,17 @@
         %span.question-default
           = image_tag("icons/marker_small.png")
         Rwanda
-      
+
       // New code
       = link_to "Show Tree View", "#", :class => "right switch"
       // End new code
-      
+
       .selector.right
         %span Compare Vs.
         %select
           %option Please select
-      
-      
+
+
       // New code
       .map-wrap
         %iframe{:frameborder => "0", :height => "400", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/?ie=UTF8&t=m&ll=-1.955187,30.355225&spn=2.195852,5.31189&z=8&output=embed", :width => "968"}
@@ -240,17 +242,17 @@
         %span.question-default
           = image_tag("icons/marker_small.png")
         Rwanda
-      
+
       // New code
       = link_to "Show Tree View", "#", :class => "right switch"
       // End new code
-      
+
       .selector.right
         %span Compare Vs.
         %select
           %option Please select
-      
-      
+
+
       // New code
       .map-wrap
         %p.nodata Information is available only on district level.
